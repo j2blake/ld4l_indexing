@@ -1,0 +1,31 @@
+#! /usr/bin/env ruby
+
+=begin rdoc
+--------------------------------------------------------------------------------
+
+Clear the Solr index, and build it fresh from the triple-store.
+
+--------------------------------------------------------------------------------
+
+Usage: ld4l_build_solr_index
+
+--------------------------------------------------------------------------------
+=end
+
+#require 'rubygems'
+$LOAD_PATH.unshift File.expand_path('/Users/jeb228/LD4L/projects/triple_store_drivers/lib')
+require 'triple_store_drivers'
+
+$LOAD_PATH.unshift File.expand_path('/Users/jeb228/LD4L/projects/triple_store_controller/lib')
+require 'triple_store_controller'
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'ld4l_indexing.rb'
+
+#
+# ---------------------------------------------------------
+# MAIN ROUTINE
+# ---------------------------------------------------------
+#
+
+Ld4lIndexing::BuildSolrIndex.new.run
