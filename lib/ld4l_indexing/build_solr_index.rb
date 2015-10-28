@@ -20,19 +20,19 @@ module Ld4lIndexing
       SELECT ?s
       WHERE { 
         ?s a <http://bibframe.org/vocab/Agent> . 
-      } LIMIT 10
+      }
     END
     QUERY_FIND_WORKS = <<-END
       SELECT ?s
       WHERE { 
         ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Work> . 
-      } LIMIT 10
+      }
     END
     QUERY_FIND_INSTANCES = <<-END
       SELECT ?s
       WHERE { 
         ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Instance> . 
-      } LIMIT 10
+      }
     END
     #
     def initialize
@@ -89,44 +89,37 @@ module Ld4lIndexing
     end
 
     def index_agents()
-      get_agent_uris.each do |uri|
-        agent = @doc_factory.document(:agent, uri)
-        if agent
-          @ss.add_document(agent.document)
-        end
-      end
-    end
-
-    def get_agent_uris()
-      QueryRunner.new(QUERY_FIND_AGENTS).execute(@ts).map { |r| r['s'] }
+      query_and_index_items(:agent, QUERY_FIND_AGENTS)
     end
 
     def index_instances()
-      get_instance_uris.each do |uri|
-        instance = @doc_factory.document(:instance, uri)
-        if instance
-          @ss.add_document(instance.document)
-        end
-      end
-    end
-
-    def get_instance_uris()
-      QueryRunner.new(QUERY_FIND_INSTANCES).execute(@ts).map { |r| r['s'] }
+      query_and_index_items(:instance, QUERY_FIND_INSTANCES)
     end
 
     def index_works()
-      get_work_uris.each do |uri|
-        work = @doc_factory.document(:work, uri)
-        if work
-          @ss.add_document(work.document)
+      query_and_index_items(:work, QUERY_FIND_WORKS)
+    end
+
+    def query_and_index_items(type, query)
+      find_uris(query).each do |uri|
+        begin
+          doc = @doc_factory.document(type, uri)
+          @ss.add_document(doc.document) if doc
+        rescue
+          log_document_error(doc, $!)
         end
       end
     end
 
-    def get_work_uris()
-      QueryRunner.new(QUERY_FIND_WORKS).execute(@ts).map { |r| r['s'] }
+    def find_uris(query)
+      QueryRunner.new(query).execute(@ts).map { |r| r['s'] }
     end
-
+    
+    def log_document_error(doc, error)
+      doc_string = doc ? doc.document : "NO DOCUMENT"
+      logit "%s\n%s\n   %s" % [doc_string, error, error.backtrace.join("\n   ")]
+    end
+    
     def run()
       begin
         begin
