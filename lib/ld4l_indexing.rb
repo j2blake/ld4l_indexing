@@ -1,3 +1,9 @@
+$LOAD_PATH.unshift File.expand_path('../../../triple_store_drivers/lib')
+require 'triple_store_drivers'
+
+$LOAD_PATH.unshift File.expand_path('../../../triple_store_controller/lib')
+require 'triple_store_controller'
+
 require "ld4l_indexing/build_solr_index"
 require "ld4l_indexing/document_factory"
 require "ld4l_indexing/document_stats_accumulator"
