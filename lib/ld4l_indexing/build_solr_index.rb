@@ -106,7 +106,7 @@ module Ld4lIndexing
           doc = @doc_factory.document(type, uri)
           @ss.add_document(doc.document) if doc
         rescue
-          log_document_error(doc, $!)
+          log_document_error(type, uri, doc, $!)
         end
       end
     end
@@ -115,9 +115,10 @@ module Ld4lIndexing
       QueryRunner.new(query).execute(@ts).map { |r| r['s'] }
     end
     
-    def log_document_error(doc, error)
-      doc_string = doc ? doc.document : "NO DOCUMENT"
-      logit "%s\n%s\n   %s" % [doc_string, error, error.backtrace.join("\n   ")]
+    def log_document_error(type, uri, doc, error)
+      doc_string = doc ? doc.document : "NO DOCUMENT FOR #{uri}"
+      backtrace = error.backtrace.join("\n   ")
+      logit "%s %s\n%s\n   %s" % [type, doc_string, error, backce]
     end
     
     def run()
