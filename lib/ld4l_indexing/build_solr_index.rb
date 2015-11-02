@@ -118,7 +118,7 @@ module Ld4lIndexing
     def log_document_error(type, uri, doc, error)
       doc_string = doc ? doc.document : "NO DOCUMENT FOR #{uri}"
       backtrace = error.backtrace.join("\n   ")
-      logit "%s %s\n%s\n   %s" % [type, doc_string, error, backce]
+      logit "%s %s\n%s\n   %s" % [type, doc_string, error, backtrace]
     end
     
     def run()
