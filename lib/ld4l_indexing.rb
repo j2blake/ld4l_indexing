@@ -8,6 +8,7 @@ require "ld4l_indexing/document_factory"
 require "ld4l_indexing/document_stats_accumulator"
 require "ld4l_indexing/query_runner"
 require "ld4l_indexing/solr_server"
+require "ld4l_indexing/uri_discoverer"
 require "ld4l_indexing/version"
 
 require "ld4l_indexing/document_base"

@@ -17,23 +17,24 @@ module Ld4lIndexing
     USAGE_TEXT = 'Usage is ld4l_build_solr_index <source_site> <report_file> [REPLACE] [OVERWRITE] '
 
     QUERY_FIND_AGENTS = <<-END
-      SELECT ?s
+      SELECT ?uri
       WHERE { 
-        ?s a <http://bibframe.org/vocab/Agent> . 
+        ?uri a <http://bibframe.org/vocab/Agent> . 
       }
     END
     QUERY_FIND_WORKS = <<-END
-      SELECT ?s
+      SELECT ?uri
       WHERE { 
-        ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Work> . 
+        ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Work> . 
       }
     END
     QUERY_FIND_INSTANCES = <<-END
-      SELECT ?s
+      SELECT ?uri
       WHERE { 
-        ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Instance> . 
+        ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Instance> . 
       }
     END
+    URI_BATCH_LIMIT = 1000
     #
     def initialize
     end
@@ -101,7 +102,7 @@ module Ld4lIndexing
     end
 
     def query_and_index_items(type, query)
-      find_uris(query).each do |uri|
+      UriDiscoverer.new(@ts, query, URI_BATCH_LIMIT).each do |uri|
         begin
           doc = @doc_factory.document(type, uri)
           @ss.add_document(doc.document) if doc
@@ -111,16 +112,12 @@ module Ld4lIndexing
       end
     end
 
-    def find_uris(query)
-      QueryRunner.new(query).execute(@ts).map { |r| r['s'] }
-    end
-    
     def log_document_error(type, uri, doc, error)
       doc_string = doc ? doc.document : "NO DOCUMENT FOR #{uri}"
       backtrace = error.backtrace.join("\n   ")
       logit "%s %s\n%s\n   %s" % [type, doc_string, error, backtrace]
     end
-    
+
     def run()
       begin
         begin
