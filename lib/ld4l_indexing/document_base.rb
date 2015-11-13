@@ -7,7 +7,7 @@ module Ld4lIndexing
     SELECT ?p ?o
     WHERE { 
       ?s ?p ?o . 
-    } LIMIT 10
+    } LIMIT 1000
     END
 
     QUERY_LABEL = <<-END
@@ -27,7 +27,7 @@ module Ld4lIndexing
         ?a a madsrdf:Authority ;
            madsrdf:authoritativeLabel ?alabel .
       }
-    } LIMIT 10
+    } LIMIT 1000
     END
     #
     def get_properties()
