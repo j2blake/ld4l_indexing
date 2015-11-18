@@ -1,21 +1,44 @@
 module Ld4lIndexing
+  class WorkInfo
+    attr_reader :uri
+    attr_reader :title
+    def initialize(uri, title)
+      @uri = uri
+      @title = title
+    end
+
+    def to_token()
+      "%s+++++%s" % [@title, DocumentFactory::uri_to_id(@uri)]
+    end
+
+    def to_string()
+      "Work: %s %s" %[@title, @uri]
+    end
+  end
+
   class AgentDocument
     include DocumentBase
+    
+    PROP_NAME = 'http://http://xmlns.com/foaf/0.1/name'
+    PROP_BIRTHDATE = 'http://schema.org/birthDate'
 
-    QUERY_AGENT_CREATES = <<-END
-    PREFIX bf: <http://bibframe.org/vocab/>
-    SELECT ?w 
-    WHERE {
-      ?w bf:creator ?a .
-    } LIMIT 100
-    END
-
-    QUERY_AGENT_CONTRIBUTES = <<-END
-    PREFIX bf: <http://bibframe.org/vocab/>
-    SELECT ?w 
-    WHERE {
-      ?w bf:contributor ?a .
-    } LIMIT 100
+    QUERY_CONTRIBUTIONS = <<-END
+      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX prov: <http://www.w3.org/ns/prov#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      SELECT ?work ?title ?isAuthor 
+      WHERE { 
+        ?work ld4l:hasContribution ?c .
+        ?c prov:agent ?agent .
+        OPTIONAL {
+          ?work ld4l:hasTitle ?t .
+          ?t rdfs:label ?title .
+        }
+        OPTIONAL { 
+          ?c a ld4l:AuthorContribution . 
+          BIND(?c as ?isAuthor) 
+        }
+      } LIMIT 1000
     END
 
     attr_reader :uri
@@ -25,7 +48,7 @@ module Ld4lIndexing
     #
     def initialize(uri, ts, source_site, stats)
       $stdout.write('A')
-#      puts "building Agent #{uri}"
+      #      puts "building Agent #{uri}"
       @uri = uri
       @ts = ts
       @source_site = source_site
@@ -40,39 +63,53 @@ module Ld4lIndexing
     def get_values()
       get_classes
       get_names
-      get_created
-      get_contributed
+      get_birthdate
+      get_created_and_contributed
       @values = {
         'classes' => @classes,
         'names' => @names ,
         'created' => @created,
-        'contributed' => @contributed }
+        'contributed' => @contributed,
+        'birthdate' => @birthdate,
+      }
     end
 
     def get_names()
-      @names = [get_label(@uri)]
+      @names = @properties.select {|prop| prop['p'] == PROP_NAME }.map {|prop| prop['o']}
     end
 
-    def get_created()
-      results = QueryRunner.new(QUERY_AGENT_CREATES).bind_uri('a', @uri).execute(@ts)
-      @created = results.map { |row| row['w'] }.select {|w| w && !w.strip.empty? }
+    def get_birthdate()
+      @birthdate = @properties.select {|prop| prop['p'] == PROP_BIRTHDATE }.map {|prop| prop['o']}
     end
 
-    def get_contributed()
-      results = QueryRunner.new(QUERY_AGENT_CONTRIBUTES).bind_uri('a', @uri).execute(@ts)
-      @contributed = results.map { |row| row['w'] }.select {|w| w && !w.strip.empty? }
+    def get_created_and_contributed
+      @created = []
+      @contributed = []
+      results = QueryRunner.new(QUERY_CONTRIBUTIONS).bind_uri('agent', @uri).execute(@ts)
+      results.each do |row|
+        title = row['title'] || 'NO TITLE'
+        if row['work']
+          if row['isAuthor']
+            @created << WorkInfo.new(row['work'], title)
+          else
+            @contributed << WorkInfo.new(row['work'], title)
+          end
+        end
+      end
     end
 
     def assemble_document()
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
       doc['title_display'] = @names[0] unless @names.empty?
-      doc['alt_titles_t'] = @names.drop(1) if @names.size > 1
+      doc['alt_names_t'] = @names.drop(1) if @names.size > 1
       doc['source_site_t'] = @source_site if @source_site
       doc['class_t'] = @classes unless @classes.empty?
-      doc['created_token'] = @created.map { |uri| "%s+++++%s" % [get_label(uri), DocumentFactory::uri_to_id(uri)] }
-      doc['contributed_token'] = @contributed.map { |uri| "%s+++++%s" % [get_label(uri), DocumentFactory::uri_to_id(uri)] }
-      doc['text'] = @names
+      doc['class_facet'] = @classes unless @classes.empty?
+      doc['birthdate_t'] = @birthdate.shift unless @birthdate.empty?
+      doc['created_token'] = @created.map {|w| w.to_token} unless @created.empty?
+      doc['contributed_token'] = @contributed.map {|w| w.to_token} unless @contributed.empty?
+      doc['text'] = @names + @created.map {|w| w.title} + @contributed.map {|w| w.title}
       @document = doc
     end
   end

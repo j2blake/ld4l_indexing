@@ -7,7 +7,7 @@ Build a Solr document for each URI and add it to the Solr index.
 
 --------------------------------------------------------------------------------
 
-Usage: ld4l_build_solr_index source_site
+Usage: ld4l_build_solr_index <source_site>
 
 --------------------------------------------------------------------------------
 =end
@@ -15,6 +15,7 @@ Usage: ld4l_build_solr_index source_site
 module Ld4lIndexing
   class BuildSolrIndex
     USAGE_TEXT = 'Usage is ld4l_build_solr_index <source_site> <report_file> [REPLACE] [OVERWRITE] '
+    SOLR_BASE_URL = 'http://localhost:8983/solr/blacklight-core'
 
     QUERY_FIND_AGENTS = <<-END
       SELECT ?uri
@@ -71,7 +72,7 @@ module Ld4lIndexing
     end
 
     def prepare_solr()
-      @ss = SolrServer.new('http://localhost:8983/solr/testing')
+      @ss = SolrServer.new(SOLR_BASE_URL)
       raise UserInputError.new("#{@ss} is not running") unless @ss.running?
     end
 

@@ -3,11 +3,15 @@
 =begin rdoc
 --------------------------------------------------------------------------------
 
-Clear the Solr index, and build it fresh from the triple-store.
+Select a well-connected sample of the triple-store and build Solr index records
+for them.
+
+Specify the number of Works to index, and the routine will also index any related
+Indexes and Agents.
 
 --------------------------------------------------------------------------------
 
-Usage: ld4l_build_solr_index <source_site>
+Usage: ld4l_sample_solr_index <source_site> <number_of_works> <report_file> [REPLACE]
 
 --------------------------------------------------------------------------------
 =end
@@ -23,4 +27,4 @@ require 'ld4l_indexing.rb'
 # ---------------------------------------------------------
 #
 
-Ld4lIndexing::BuildSolrIndex.new.run
+Ld4lIndexing::SampleSolrIndex.new.run
