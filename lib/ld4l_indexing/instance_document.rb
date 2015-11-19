@@ -196,6 +196,7 @@ module Ld4lIndexing
       doc['title_display'] = @titles[0] unless @titles.empty?
       doc['alt_titles_t'] = @titles.drop(1) if @titles.size > 1
       doc['source_site_t'] = @source_site if @source_site
+      doc['source_site_facet'] = @source_site if @source_site
       doc['class_t'] = @classes unless @classes.empty?
       doc['class_facet'] = @classes unless @classes.empty?
       doc['instance_of_token'] = @instance_of.map { |uri| "%s+++++%s" % [get_titles_for(uri).shift, DocumentFactory::uri_to_id(uri)] } unless @instance_of.empty?

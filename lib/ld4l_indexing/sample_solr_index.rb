@@ -35,7 +35,7 @@ module Ld4lIndexing
 
       raise UserInputError.new(USAGE_TEXT) unless args && args.size == 3
 
-      sites = ['cornell', 'harvard', 'stanford']
+      sites = ['Cornell', 'Harvard', 'Stanford']
       raise UserInputError.new("Source site must be one of these: #{sites.join(', ')}") unless sites.include?(args[0])
       @source_site = args[0]
 
