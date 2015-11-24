@@ -24,8 +24,13 @@ module Ld4lIndexing
       }
     END
 
+    TYPES = [
+      {:id => :work, :query => QUERY_FIND_WORKS},
+    ]
+
     USAGE_TEXT = 'Usage is ld4l_sample_solr_index <source_site> <number_of_works> <report_file> [REPLACE]'
     SOLR_BASE_URL = 'http://localhost:8983/solr/blacklight-core'
+
     #
     def initialize
     end
@@ -51,12 +56,6 @@ module Ld4lIndexing
       logit "ld4l_sample_solr_index #{args.join(' ')}"
     end
 
-    def logit(message)
-      m = "#{Time.new.strftime('%Y-%m-%d %H:%M:%S')} #{message}"
-      puts m
-      @report.puts(m)
-    end
-
     def prepare_solr()
       @ss = SolrServer.new(SOLR_BASE_URL)
       raise UserInputError.new("#{@ss} is not running") unless @ss.running?
@@ -77,21 +76,29 @@ module Ld4lIndexing
     end
 
     def index_works()
-      UriDiscoverer.new(@ts, QUERY_FIND_WORKS, @number_of_works).each do |uri|
+      uris = UriDiscoverer.new(@bookmark, @ts, @report, TYPES, @number_of_works)
+      uris.each do |type, uri|
         begin
-          doc = @doc_factory.document(:work, uri)
-          if doc
-            @ss.add_document(doc.document)
-            index_instances(doc.values["instance_uris"])
-            index_agents(doc.values['creators'].map {|c| c.uri})
-            index_agents(doc.values['contributors'].map {|c| c.uri})
+          if @interrupted
+            process_interruption
+            raise UserInputError.new("INTERRUPTED")
+          else
+            begin
+              doc = @doc_factory.document(type, uri)
+              if doc
+                @ss.add_document(doc.document)
+                index_instances(doc.values["instance_uris"])
+                index_agents(doc.values['creators'].map {|c| c.uri})
+                index_agents(doc.values['contributors'].map {|c| c.uri})
+              end
+            rescue
+              @report.log_document_error(:work, uri, doc, $!)
+            end
           end
-        rescue
-          log_document_error(:work, uri, doc, $!)
         end
       end
     end
-    
+
     def index_instances(uris)
       uris.each do |uri|
         begin
@@ -118,30 +125,36 @@ module Ld4lIndexing
       end
     end
 
-    def log_document_error(type, uri, doc, error)
-      doc_string = doc ? doc.document : "NO DOCUMENT FOR #{uri}"
-      backtrace = error.backtrace.join("\n   ")
-      logit "%s %s\n%s\n   %s" % [type, doc_string, error, backtrace]
+    def initialize_bookmark
+      @bookmark = Bookmark.new('sample_solr_index', @ss, @restart)
     end
 
-    def report
-      logit @doc_factory.work_stats
-      logit @doc_factory.instance_stats
-      logit @doc_factory.agent_stats
+    def trap_control_c
+      @interrupted = false
+      trap("SIGINT") do
+        @interrupted = true
+      end
+    end
+
+    def process_interruption
+      @bookmark.persist
+      @report.summarize(@doc_factory, @bookmark, :interrupted)
     end
 
     def run()
       begin
         process_arguments(ARGV)
-        @report = File.open(@report_file_path, 'w')
+        @report = Report.new('ld4l_sample_solr_index', @report_file_path)
+        @report.log_header(ARGV)
 
-        log_header(ARGV)
         prepare_solr
         prepare_triple_store
         prepare_document_factory
+        initialize_bookmark
+        trap_control_c
 
         index_works
-        report
+        @report.summarize(@doc_factory, @bookmark)
       rescue UserInputError
         puts
         puts "ERROR: #{$!}"

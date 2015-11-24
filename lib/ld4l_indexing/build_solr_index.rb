@@ -7,42 +7,56 @@ Build a Solr document for each URI and add it to the Solr index.
 
 --------------------------------------------------------------------------------
 
-Usage: ld4l_build_solr_index <source_site>
+Usage: ld4l_build_solr_index [RESTART] <source_site> <report_file> [REPLACE]
 
 --------------------------------------------------------------------------------
 =end
 
 module Ld4lIndexing
   class BuildSolrIndex
-    USAGE_TEXT = 'Usage is ld4l_build_solr_index <source_site> <report_file> [REPLACE] [OVERWRITE] '
+    USAGE_TEXT = 'Usage is ld4l_build_solr_index [RESTART] <source_site> <report_file> [REPLACE]'
     SOLR_BASE_URL = 'http://localhost:8983/solr/blacklight-core'
 
     QUERY_FIND_AGENTS = <<-END
+      PREFIX foaf: <http://http://xmlns.com/foaf/0.1/>
       SELECT ?uri
-      WHERE { 
-        ?uri a <http://bibframe.org/vocab/Agent> . 
+      WHERE {
+        { 
+          ?uri a foaf:Person .
+        } UNION {
+          ?uri a foaf:Organization .
+        } 
       }
     END
     QUERY_FIND_WORKS = <<-END
+      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       SELECT ?uri
       WHERE { 
-        ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Work> . 
+        ?uri a ld4l:Work . 
       }
     END
     QUERY_FIND_INSTANCES = <<-END
+      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       SELECT ?uri
       WHERE { 
-        ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Instance> . 
+        ?uri a ld4l:Instance . 
       }
     END
+
+    TYPES = [
+      {:id => :work, :query => QUERY_FIND_WORKS},
+      {:id => :instance, :query => QUERY_FIND_INSTANCES},
+      {:id => :agent, :query => QUERY_FIND_AGENTS}
+    ]
+
     URI_BATCH_LIMIT = 1000
-    #
+
     def initialize
     end
 
     def process_arguments(args)
       replace_file = args.delete('REPLACE')
-      overwrite_index = args.delete('OVERWRITE')
+      @restart = args.delete('RESTART')
 
       raise UserInputError.new(USAGE_TEXT) unless args && args.size == 2
 
@@ -53,22 +67,6 @@ module Ld4lIndexing
       raise UserInputError.new("#{args[1]} already exists -- specify REPLACE") if File.exist?(args[1]) unless replace_file
       raise UserInputError.new("Can't create #{args[1]}: no parent directory.") unless Dir.exist?(File.dirname(args[1]))
       @report_file_path = File.expand_path(args[1])
-    end
-
-    def log_header(args)
-      logit "ld4l_build_solr_index #{args.join(' ')}"
-    end
-
-    def logit(message)
-      m = "#{Time.new.strftime('%Y-%m-%d %H:%M:%S')} #{message}"
-      puts m
-      @report.puts(m)
-    end
-
-    def report
-      logit @doc_factory.instance_stats
-      logit @doc_factory.work_stats
-      logit @doc_factory.agent_stats
     end
 
     def prepare_solr()
@@ -90,58 +88,61 @@ module Ld4lIndexing
       @doc_factory = DocumentFactory.new(@ts, :source_site => @source_site)
     end
 
-    def index_agents()
-      query_and_index_items(:agent, QUERY_FIND_AGENTS)
+    def initialize_bookmark
+      @bookmark = Bookmark.new('build_solr_index', @ss, @restart)
     end
 
-    def index_instances()
-      query_and_index_items(:instance, QUERY_FIND_INSTANCES)
+    def trap_control_c
+      @interrupted = false
+      trap("SIGINT") do
+        @interrupted = true
+      end
     end
 
-    def index_works()
-      query_and_index_items(:work, QUERY_FIND_WORKS)
-    end
-
-    def query_and_index_items(type, query)
-      UriDiscoverer.new(@ts, query, URI_BATCH_LIMIT).each do |uri|
-        begin
-          doc = @doc_factory.document(type, uri)
-          @ss.add_document(doc.document) if doc
-        rescue
-          log_document_error(type, uri, doc, $!)
+    def query_and_index_items()
+      uris = UriDiscoverer.new(@bookmark, @ts, @report, TYPES, URI_BATCH_LIMIT)
+      uris.each do |type, uri|
+        if @interrupted
+          process_interruption
+          raise UserInputError.new("INTERRUPTED")
+        else
+          begin
+            doc = @doc_factory.document(type, uri)
+            @ss.add_document(doc.document) if doc
+          rescue
+            @report.log_document_error(type, uri, doc, $!)
+          end
         end
       end
     end
 
-    def log_document_error(type, uri, doc, error)
-      doc_string = doc ? doc.document : "NO DOCUMENT FOR #{uri}"
-      backtrace = error.backtrace.join("\n   ")
-      logit "%s %s\n%s\n   %s" % [type, doc_string, error, backtrace]
+    def process_interruption
+      @bookmark.persist
+      @report.summarize(@doc_factory, @bookmark, :interrupted)
     end
 
     def run()
       begin
-        begin
-          process_arguments(ARGV)
-          @report = File.open(@report_file_path, 'w')
+        process_arguments(ARGV)
+        @report = Report.new('ld4l_build_solr_index', @report_file_path)
+        @report.log_header(ARGV)
 
-          log_header(ARGV)
-          prepare_solr
-          prepare_triple_store
-          prepare_document_factory
+        prepare_solr
+        prepare_triple_store
+        prepare_document_factory
+        initialize_bookmark
+        trap_control_c
 
-          index_agents
-          index_instances
-          index_works
+        query_and_index_items
 
-          report
-        ensure
-          @report.close if @report
-        end
+        @report.summarize(@doc_factory, @bookmark)
+        @bookmark.clear
       rescue UserInputError
         puts
         puts "ERROR: #{$!}"
         puts
+      ensure
+        @report.close if @report
       end
     end
   end

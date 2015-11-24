@@ -8,10 +8,12 @@ require 'rdf/ntriples'
 
 require "ld4l_indexing/build_solr_index"
 require "ld4l_indexing/sample_solr_index"
+require "ld4l_indexing/bookmark"
 require "ld4l_indexing/document_factory"
 require "ld4l_indexing/document_stats_accumulator"
 require "ld4l_indexing/language_reference"
 require "ld4l_indexing/query_runner"
+require "ld4l_indexing/report"
 require "ld4l_indexing/solr_server"
 require "ld4l_indexing/uri_discoverer"
 require "ld4l_indexing/version"
