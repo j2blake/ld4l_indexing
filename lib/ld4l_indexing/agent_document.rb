@@ -22,23 +22,20 @@ module Ld4lIndexing
     PROP_NAME = 'http://http://xmlns.com/foaf/0.1/name'
     PROP_BIRTHDATE = 'http://schema.org/birthDate'
 
-    QUERY_CONTRIBUTIONS = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
-      PREFIX prov: <http://www.w3.org/ns/prov#>
-      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      SELECT ?work ?title ?isAuthor 
-      WHERE { 
-        ?work ld4l:hasContribution ?c .
-        ?c prov:agent ?agent .
-        OPTIONAL {
-          ?work ld4l:hasTitle ?t .
-          ?t rdfs:label ?title .
-        }
-        OPTIONAL { 
-          ?c a ld4l:AuthorContribution . 
-          BIND(?c as ?isAuthor) 
-        }
-      } LIMIT 1000
+    QUERY_AGENT_CREATES = <<-END
+    PREFIX bf: <http://bibframe.org/vocab/>
+    SELECT ?w 
+    WHERE {
+      ?w bf:creator ?a .
+    } LIMIT 100
+    END
+
+    QUERY_AGENT_CONTRIBUTES = <<-END
+    PREFIX bf: <http://bibframe.org/vocab/>
+    SELECT ?w 
+    WHERE {
+      ?w bf:contributor ?a .
+    } LIMIT 100
     END
 
     attr_reader :uri
@@ -63,52 +60,39 @@ module Ld4lIndexing
     def get_values()
       get_classes
       get_names
-      get_birthdate
-      get_created_and_contributed
+      get_created
+      get_contributed
       @values = {
         'classes' => @classes,
         'names' => @names ,
         'created' => @created,
-        'contributed' => @contributed,
-        'birthdate' => @birthdate,
-      }
+        'contributed' => @contributed }
     end
 
     def get_names()
-      @names = @properties.select {|prop| prop['p'] == PROP_NAME }.map {|prop| prop['o']}
+      @names = [get_label(@uri)]
     end
 
-    def get_birthdate()
-      @birthdate = @properties.select {|prop| prop['p'] == PROP_BIRTHDATE }.map {|prop| prop['o']}
+    def get_created()
+      results = QueryRunner.new(QUERY_AGENT_CREATES).bind_uri('a', @uri).execute(@ts)
+      @created = results.map { |row| row['w'] }.select {|w| w && !w.strip.empty? }
     end
 
-    def get_created_and_contributed
-      @created = []
-      @contributed = []
-      results = QueryRunner.new(QUERY_CONTRIBUTIONS).bind_uri('agent', @uri).execute(@ts)
-      results.each do |row|
-        title = row['title'] || 'NO TITLE'
-        if row['work']
-          if row['isAuthor']
-            @created << WorkInfo.new(row['work'], title)
-          else
-            @contributed << WorkInfo.new(row['work'], title)
-          end
-        end
-      end
+    def get_contributed()
+      results = QueryRunner.new(QUERY_AGENT_CONTRIBUTES).bind_uri('a', @uri).execute(@ts)
+      @contributed = results.map { |row| row['w'] }.select {|w| w && !w.strip.empty? }
     end
 
     def assemble_document()
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
       doc['title_display'] = @names[0] unless @names.empty?
-      doc['alt_names_t'] = @names.drop(1) if @names.size > 1
-      doc['source_site_facet'] = @source_site if @source_site
-      doc['class_facet'] = @classes unless @classes.empty?
-      doc['birthdate_t'] = @birthdate.shift unless @birthdate.empty?
-      doc['created_token'] = @created.map {|w| w.to_token} unless @created.empty?
-      doc['contributed_token'] = @contributed.map {|w| w.to_token} unless @contributed.empty?
-      doc['text'] = @names + @created.map {|w| w.title} + @contributed.map {|w| w.title}
+      doc['alt_titles_t'] = @names.drop(1) if @names.size > 1
+      doc['source_site_t'] = @source_site if @source_site
+      doc['class_t'] = @classes unless @classes.empty?
+      doc['created_token'] = @created.map { |uri| "%s+++++%s" % [get_label(uri), DocumentFactory::uri_to_id(uri)] }
+      doc['contributed_token'] = @contributed.map { |uri| "%s+++++%s" % [get_label(uri), DocumentFactory::uri_to_id(uri)] }
+      doc['text'] = @names
       @document = doc
     end
   end

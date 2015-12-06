@@ -20,26 +20,22 @@ module Ld4lIndexing
     QUERY_FIND_AGENTS = <<-END
       PREFIX foaf: <http://http://xmlns.com/foaf/0.1/>
       SELECT ?uri
-      WHERE {
-        { 
-          ?uri a foaf:Person .
-        } UNION {
-          ?uri a foaf:Organization .
-        } 
+      WHERE { 
+        ?uri a <http://bibframe.org/vocab/Agent> . 
       }
     END
     QUERY_FIND_WORKS = <<-END
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       SELECT ?uri
       WHERE { 
-        ?uri a ld4l:Work . 
+        ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Work> . 
       }
     END
     QUERY_FIND_INSTANCES = <<-END
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       SELECT ?uri
       WHERE { 
-        ?uri a ld4l:Instance . 
+        ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Instance> . 
       }
     END
 

@@ -20,7 +20,7 @@ module Ld4lIndexing
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       SELECT ?uri
       WHERE { 
-        ?uri a ld4l:Work . 
+        ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibframe.org/vocab/Work> . 
       }
     END
 
@@ -88,8 +88,8 @@ module Ld4lIndexing
               if doc
                 @ss.add_document(doc.document)
                 index_instances(doc.values["instance_uris"])
-                index_agents(doc.values['creators'].map {|c| c.uri})
-                index_agents(doc.values['contributors'].map {|c| c.uri})
+                index_agents(doc.values['creators'])
+                index_agents(doc.values['contributors'])
               end
             rescue
               @report.log_document_error(:work, uri, doc, $!)
