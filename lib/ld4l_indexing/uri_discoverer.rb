@@ -12,6 +12,7 @@ LIMIT, since they will be added here.
 
 module Ld4lIndexing
   class UriDiscoverer
+    include Enumerable
     def initialize(bookmark, ts, report, types, limit)
       @bookmark = bookmark
       @ts = ts
