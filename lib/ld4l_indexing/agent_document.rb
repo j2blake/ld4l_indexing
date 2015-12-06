@@ -44,8 +44,6 @@ module Ld4lIndexing
     attr_reader :document
     #
     def initialize(uri, ts, source_site, stats)
-      $stdout.write('A')
-      #      puts "building Agent #{uri}"
       @uri = uri
       @ts = ts
       @source_site = source_site

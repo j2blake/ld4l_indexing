@@ -76,8 +76,8 @@ module Ld4lIndexing
     end
 
     def index_works()
-      uris = UriDiscoverer.new(@bookmark, @ts, @report, TYPES, @number_of_works)
-      uris.each do |type, uri|
+      uris = UriDiscoverer.new(@bookmark, @ts, @report, TYPES, 1000)
+      uris.first(@number_of_works).each do |type, uri|
         begin
           if @interrupted
             process_interruption
@@ -155,6 +155,7 @@ module Ld4lIndexing
 
         index_works
         @report.summarize(@doc_factory, @bookmark)
+        @bookmark.clear
       rescue UserInputError
         puts
         puts "ERROR: #{$!}"
