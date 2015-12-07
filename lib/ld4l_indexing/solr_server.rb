@@ -23,16 +23,15 @@ module Ld4lIndexing
 
     def add_document(doc)
       @solr.add doc
-      @solr.commit
     end
     
     def get_document(id)
       @solr.get('select', :params => { :qt => 'document', :id => id })
     end
     
-    #    def query(q)
-    #      @solr.get('select', :params => { :q => q })
-    #    end
+    def query(params)
+      @solr.get('select', :params => params)
+    end
 
     def commit()
       @solr.commit
@@ -41,6 +40,15 @@ module Ld4lIndexing
     def delete_by_id(id)
       @solr.delete_by_id([id])
       @solr.commit
+    end
+    
+    def clear()
+      @solr.delete_by_query('*:*')
+      @solr.commit
+    end
+    
+    def num_docs()
+      @solr.get('select', :params => {:rows => 0})['response']['numFound']
     end
 
     def to_s

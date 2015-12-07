@@ -43,10 +43,10 @@ module Ld4lIndexing
     attr_reader :values
     attr_reader :document
     #
-    def initialize(uri, ts, source_site, stats)
+    def initialize(uri, ts, stats)
       @uri = uri
       @ts = ts
-      @source_site = source_site
+      @source_site = figure_source_site(uri)
       @stats = stats
 
       get_properties

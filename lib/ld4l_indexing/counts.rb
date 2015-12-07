@@ -11,33 +11,49 @@ module Ld4lIndexing
     QUERY_COUNT_TRIPLES = <<-END
       SELECT (count(?s) as ?count)
       WHERE { 
-        ?s ?p ?o .
+        GRAPH ?g {
+          ?s ?p ?o .
+        }
       }
     END
     QUERY_COUNT_WORKS = <<-END
       SELECT (count(?uri) as ?count)
       WHERE { 
-        ?uri a <http://bibframe.org/vocab/Work> . 
+        GRAPH ?g {
+          ?uri a <http://bibframe.org/vocab/Work> . 
+        } 
       }
     END
     QUERY_COUNT_INSTANCES = <<-END
       SELECT (count(?uri) as ?count)
       WHERE { 
-        ?uri a <http://bibframe.org/vocab/Instance> . 
+        GRAPH ?g {
+          ?uri a <http://bibframe.org/vocab/Instance> . 
+        } 
       }
     END
     QUERY_COUNT_AGENTS = <<-END
       SELECT (count(?uri) as ?count)
-      WHERE { 
-        ?uri a <http://bibframe.org/vocab/Agent> . 
+      WHERE {
+        GRAPH ?g {
+          ?uri a <http://bibframe.org/vocab/Agent> . 
+        } 
       }
     END
-    def initialize(ts)
+    def initialize(ts, graph)
+      @ts = ts
       @name = ts.to_s
-      @triples = QueryRunner.new(QUERY_COUNT_TRIPLES).execute(ts).map { |row| row['count'] }[0]
-      @works = QueryRunner.new(QUERY_COUNT_WORKS).execute(ts).map { |row| row['count'] }[0]
-      @instances = QueryRunner.new(QUERY_COUNT_INSTANCES).execute(ts).map { |row| row['count'] }[0]
-      @agents = QueryRunner.new(QUERY_COUNT_AGENTS).execute(ts).map { |row| row['count'] }[0]
+      @graph = graph
+      @triples = run_query(QUERY_COUNT_TRIPLES)
+      @works = run_query(QUERY_COUNT_WORKS)
+      @instances = run_query(QUERY_COUNT_INSTANCES)
+      @agents = run_query(QUERY_COUNT_AGENTS)
+    end
+
+    def run_query(q)
+      query = QueryRunner.new(q)
+      query.bind_uri('g', @graph) if @graph
+      query.execute(@ts).map { |row| row['count'] }[0]
     end
 
     def values
