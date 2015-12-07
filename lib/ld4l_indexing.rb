@@ -9,6 +9,7 @@ require 'rdf/ntriples'
 require "ld4l_indexing/build_solr_index"
 require "ld4l_indexing/sample_solr_index"
 require "ld4l_indexing/bookmark"
+require "ld4l_indexing/counts"
 require "ld4l_indexing/document_factory"
 require "ld4l_indexing/document_stats_accumulator"
 require "ld4l_indexing/language_reference"

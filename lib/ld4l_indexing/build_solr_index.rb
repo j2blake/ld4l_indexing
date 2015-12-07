@@ -133,6 +133,7 @@ module Ld4lIndexing
         initialize_bookmark
         trap_control_c
 
+        @report.record_counts(Counts.new(@ts))
         query_and_index_items
 
         @report.summarize(@doc_factory, @bookmark)
