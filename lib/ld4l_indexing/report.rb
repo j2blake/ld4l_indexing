@@ -8,6 +8,10 @@ module Ld4lIndexing
     def log_header(args)
       logit "#{@main_routine} #{args.join(' ')}"
     end
+    
+    def record_counts(counts)
+      logit "%{name}: %{triples} triples, %{works} works, %{instances} instances, %{agents} agents." % counts.values
+    end
 
     def log_document_error(type, uri, doc, error)
       doc_string = doc ? doc.document : "NO DOCUMENT FOR #{uri}"
