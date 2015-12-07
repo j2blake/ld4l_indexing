@@ -7,7 +7,7 @@ Clear the Solr index, and build it fresh from the triple-store.
 
 --------------------------------------------------------------------------------
 
-Usage: ld4l_build_solr_index <source_site>
+Usage: ld4l_build_solr_index [RESTART] <report_file> [REPLACE] [cornell|harvard|stanford]
 
 --------------------------------------------------------------------------------
 =end

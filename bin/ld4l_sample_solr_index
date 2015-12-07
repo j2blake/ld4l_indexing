@@ -9,9 +9,11 @@ for them.
 Specify the number of Works to index, and the routine will also index any related
 Indexes and Agents.
 
+Restart will empty out the search index and wipe the bookmark.
+
 --------------------------------------------------------------------------------
 
-Usage: ld4l_sample_solr_index <source_site> <number_of_works> <report_file> [REPLACE]
+Usage: ld4l_sample_solr_index <number_of_works> <report_file> [REPLACE] [RESTART] [cornell|harvard|stanford]
 
 --------------------------------------------------------------------------------
 =end

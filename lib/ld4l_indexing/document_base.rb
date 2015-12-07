@@ -22,6 +22,15 @@ module Ld4lIndexing
       } LIMIT 100
     END
     #
+    def figure_source_site(uri)
+      DocumentFactory::GRAPH_NAMES.each_pair do |site, graph|
+        if uri.start_with? graph
+          return site.capitalize
+        end
+      end
+      nil
+    end
+
     def get_properties()
       @properties = QueryRunner.new(QUERY_PROPERTIES).bind_uri('s', @uri).execute(@ts)
     end

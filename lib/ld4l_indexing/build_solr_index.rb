@@ -7,39 +7,45 @@ Build a Solr document for each URI and add it to the Solr index.
 
 --------------------------------------------------------------------------------
 
-Usage: ld4l_build_solr_index [RESTART] <source_site> <report_file> [REPLACE]
+Usage: ld4l_build_solr_index [RESTART] <report_file> [REPLACE] [cornell|harvard|stanford]
 
 --------------------------------------------------------------------------------
 =end
 
 module Ld4lIndexing
   class BuildSolrIndex
-    USAGE_TEXT = 'Usage is ld4l_build_solr_index [RESTART] <source_site> <report_file> [REPLACE]'
+    USAGE_TEXT = 'Usage is ld4l_build_solr_index [RESTART] <report_file> [REPLACE] [cornell|harvard|stanford]'
     SOLR_BASE_URL = 'http://localhost:8983/solr/blacklight-core'
 
     QUERY_FIND_AGENTS = <<-END
       PREFIX foaf: <http://http://xmlns.com/foaf/0.1/>
       SELECT ?uri
       WHERE {
-        { 
-          ?uri a foaf:Person .
-        } UNION {
-          ?uri a foaf:Organization .
-        } 
+        GRAPH ?g {
+          { 
+            ?uri a foaf:Person .
+          } UNION {
+            ?uri a foaf:Organization .
+          } 
+        }
       }
     END
     QUERY_FIND_WORKS = <<-END
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       SELECT ?uri
-      WHERE { 
-        ?uri a ld4l:Work . 
+      WHERE {
+        GRAPH ?g { 
+          ?uri a ld4l:Work .
+        } 
       }
     END
     QUERY_FIND_INSTANCES = <<-END
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       SELECT ?uri
-      WHERE { 
-        ?uri a ld4l:Instance . 
+      WHERE {
+        GRAPH ?g { 
+          ?uri a ld4l:Instance .
+        } 
       }
     END
 
@@ -56,22 +62,42 @@ module Ld4lIndexing
 
     def process_arguments(args)
       replace_file = args.delete('REPLACE')
-      @restart = args.delete('RESTART')
+      @restart_run = args.delete('RESTART')
 
-      raise UserInputError.new(USAGE_TEXT) unless args && args.size == 2
+      sites = [args.delete('cornell'), args.delete('harvard'), args.delete('stanford')].compact
+      case sites.size
+      when 0
+        @graph = nil
+      when 1
+        @graph = DocumentFactory::GRAPH_NAMES[sites[0]]
+      else
+        raise UserInputError.new("you may not specify more than one site name: #{sites.inspect}")
+      end
 
-      valid_source_sites = ['Cornell', 'Harvard', 'Stanford']
-      raise UserInputError.new("Source site must be one of these: #{valid_source_sites.join(', ')}") unless valid_source_sites.include?(args[0])
-      @source_site = args[0]
+      raise UserInputError.new(USAGE_TEXT) unless args && args.size == 1
 
-      raise UserInputError.new("#{args[1]} already exists -- specify REPLACE") if File.exist?(args[1]) unless replace_file
-      raise UserInputError.new("Can't create #{args[1]}: no parent directory.") unless Dir.exist?(File.dirname(args[1]))
-      @report_file_path = File.expand_path(args[1])
+      raise UserInputError.new("#{args[0]} already exists -- specify REPLACE") if File.exist?(args[0]) unless replace_file
+      raise UserInputError.new("Can't create #{args[0]}: no parent directory.") unless Dir.exist?(File.dirname(args[0]))
+      @report_file_path = File.expand_path(args[0])
     end
 
     def prepare_solr()
       @ss = SolrServer.new(SOLR_BASE_URL)
       raise UserInputError.new("#{@ss} is not running") unless @ss.running?
+
+      if @restart_run
+        if confirm_intentions?
+          @ss.clear
+        else
+          raise UserInputError.new("OK. Skip it.")
+        end
+      end
+    end
+
+    def confirm_intentions?
+      puts "Solr contains #{@ss.num_docs} documemts."
+      puts "Delete them? (yes/no) ?"
+      'yes' == STDIN.gets.chomp
     end
 
     def prepare_triple_store()
@@ -85,7 +111,7 @@ module Ld4lIndexing
     end
 
     def prepare_document_factory
-      @doc_factory = DocumentFactory.new(@ts, :source_site => @source_site)
+      @doc_factory = DocumentFactory.new(@ts)
     end
 
     def initialize_bookmark
@@ -100,7 +126,8 @@ module Ld4lIndexing
     end
 
     def query_and_index_items()
-      uris = UriDiscoverer.new(@bookmark, @ts, @report, TYPES, URI_BATCH_LIMIT)
+      bindings = @graph ? {'g' => @graph} : {}
+      uris = UriDiscoverer.new(@bookmark, @ts, @report, TYPES, URI_BATCH_LIMIT, bindings)
       uris.each do |type, uri|
         if @interrupted
           process_interruption
@@ -117,6 +144,7 @@ module Ld4lIndexing
     end
 
     def process_interruption
+      @ss.commit
       @bookmark.persist
       @report.summarize(@doc_factory, @bookmark, :interrupted)
     end
@@ -133,10 +161,11 @@ module Ld4lIndexing
         initialize_bookmark
         trap_control_c
 
-        @report.record_counts(Counts.new(@ts))
+        @report.record_counts(Counts.new(@ts, @graph))
         query_and_index_items
 
         @report.summarize(@doc_factory, @bookmark)
+        @ss.commit
         @bookmark.clear
       rescue UserInputError
         puts

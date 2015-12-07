@@ -13,12 +13,13 @@ LIMIT, since they will be added here.
 module Ld4lIndexing
   class UriDiscoverer
     include Enumerable
-    def initialize(bookmark, ts, report, types, limit)
+    def initialize(bookmark, ts, report, types, limit, bindings = {})
       @bookmark = bookmark
       @ts = ts
       @report = report
       @types = types
       @limit = limit
+      @bindings = bindings
       @uris = []
     end
 
@@ -51,7 +52,11 @@ module Ld4lIndexing
     end
 
     def find_uris(query)
-      QueryRunner.new(query).execute(@ts).map { |r| r['uri'] }
+      q = QueryRunner.new(query)
+      @bindings.each_pair do |k, v|
+        q.bind_uri(k, v)
+      end
+      q.execute(@ts).map { |r| r['uri'] }
     end
 
   end

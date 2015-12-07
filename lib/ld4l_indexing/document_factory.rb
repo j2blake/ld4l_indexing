@@ -1,8 +1,15 @@
 module Ld4lIndexing
   class DocumentFactory
+    GRAPH_NAMES = {
+      'cornell' => 'http://draft.ld4l.org/cornell',
+      'harvard' => 'http://draft.ld4l.org/harvard',
+      'stanford' => 'http://draft.ld4l.org/stanford',
+    }
+
     attr_reader :instance_stats
     attr_reader :work_stats
     attr_reader :agent_stats
+
     class << self
       def uri_localname(uri)
         delimiter = uri.rindex(/[\/#]/)
@@ -27,9 +34,8 @@ module Ld4lIndexing
       end
     end
 
-    def initialize(ts, props)
+    def initialize(ts)
       @ts = ts
-      @source_site = props[:source_site]
       @instance_stats = DocumentStatsAccumulator.new("INSTANCES")
       @work_stats = DocumentStatsAccumulator.new("WORKS")
       @agent_stats = DocumentStatsAccumulator.new("AGENTS")
@@ -47,17 +53,17 @@ module Ld4lIndexing
         raise "Invalid document type: #{type}"
       end
     end
-    
+
     def instance_document(uri)
-      InstanceDocument.new(uri, @ts, @source_site, @instance_stats)
+      InstanceDocument.new(uri, @ts, @instance_stats)
     end
 
     def work_document(uri)
-      WorkDocument.new(uri, @ts, @source_site, @work_stats)
+      WorkDocument.new(uri, @ts, @work_stats)
     end
 
     def agent_document(uri)
-      AgentDocument.new(uri, @ts, @source_site, @agent_stats)
+      AgentDocument.new(uri, @ts, @agent_stats)
     end
 
     def counts()

@@ -7,9 +7,11 @@ for them.
 Specify the number of Works to index, and the routine will also index any related
 Indexes and Agents.
 
+Restart will empty out the search index and wipe the bookmark.
+
 --------------------------------------------------------------------------------
 
-Usage: ld4l_sample_solr_index <source_site> <number_of_works> <report_file> [REPLACE]
+Usage: ld4l_sample_solr_index <number_of_works> <report_file> [REPLACE] [RESTART] [cornell|harvard|stanford]
 
 --------------------------------------------------------------------------------
 =end
@@ -20,7 +22,9 @@ module Ld4lIndexing
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       SELECT ?uri
       WHERE { 
-        ?uri a ld4l:Work . 
+        GRAPH ?g {
+          ?uri a ld4l:Work .
+        } 
       }
     END
 
@@ -28,7 +32,7 @@ module Ld4lIndexing
       {:id => :work, :query => QUERY_FIND_WORKS},
     ]
 
-    USAGE_TEXT = 'Usage is ld4l_sample_solr_index <source_site> <number_of_works> <report_file> [REPLACE]'
+    USAGE_TEXT = 'Usage is ld4l_sample_solr_index <number_of_works> <report_file> [REPLACE] [RESTART] [cornell|harvard|stanford]'
     SOLR_BASE_URL = 'http://localhost:8983/solr/blacklight-core'
 
     #
@@ -37,19 +41,26 @@ module Ld4lIndexing
 
     def process_arguments(args)
       replace_file = args.delete('REPLACE')
+      @restart_run = args.delete('RESTART')
 
-      raise UserInputError.new(USAGE_TEXT) unless args && args.size == 3
+      sites = [args.delete('cornell'), args.delete('harvard'), args.delete('stanford')].compact
+      case sites.size
+      when 0
+        @graph = nil
+      when 1
+        @graph = DocumentFactory::GRAPH_NAMES[sites[0]]
+      else
+        raise UserInputError.new("you may not specify more than one site name: #{sites.inspect}")
+      end
 
-      sites = ['Cornell', 'Harvard', 'Stanford']
-      raise UserInputError.new("Source site must be one of these: #{sites.join(', ')}") unless sites.include?(args[0])
-      @source_site = args[0]
+      raise UserInputError.new(USAGE_TEXT) unless args && args.size == 2
 
-      raise UserInputError.new("Number of works must be a positive integer: #{args[1]}") unless args[1].to_i > 0
-      @number_of_works = args[1].to_i
+      raise UserInputError.new("Number of works must be a positive integer: #{args[0]}") unless args[0].to_i > 0
+      @number_of_works = args[0].to_i
 
-      raise UserInputError.new("#{args[2]} already exists -- specify REPLACE") if File.exist?(args[2]) unless replace_file
-      raise UserInputError.new("Can't create #{args[2]}: no parent directory.") unless Dir.exist?(File.dirname(args[2]))
-      @report_file_path = File.expand_path(args[2])
+      raise UserInputError.new("#{args[1]} already exists -- specify REPLACE") if File.exist?(args[1]) unless replace_file
+      raise UserInputError.new("Can't create #{args[1]}: no parent directory.") unless Dir.exist?(File.dirname(args[1]))
+      @report_file_path = File.expand_path(args[1])
     end
 
     def log_header(args)
@@ -59,6 +70,20 @@ module Ld4lIndexing
     def prepare_solr()
       @ss = SolrServer.new(SOLR_BASE_URL)
       raise UserInputError.new("#{@ss} is not running") unless @ss.running?
+
+      if @restart_run
+        if confirm_intentions?
+          @ss.clear
+        else
+          raise UserInputError.new("OK. Skip it.")
+        end
+      end
+    end
+
+    def confirm_intentions?
+      puts "Solr contains #{@ss.num_docs} documemts."
+      puts "Delete them? (yes/no) ?"
+      'yes' == STDIN.gets.chomp
     end
 
     def prepare_triple_store()
@@ -72,11 +97,12 @@ module Ld4lIndexing
     end
 
     def prepare_document_factory
-      @doc_factory = DocumentFactory.new(@ts, :source_site => @source_site)
+      @doc_factory = DocumentFactory.new(@ts)
     end
 
     def index_works()
-      uris = UriDiscoverer.new(@bookmark, @ts, @report, TYPES, 1000)
+      bindings = @graph ? {'g' => @graph} : {}
+      uris = UriDiscoverer.new(@bookmark, @ts, @report, TYPES, 500, bindings)
       uris.first(@number_of_works).each do |type, uri|
         begin
           if @interrupted
@@ -137,6 +163,7 @@ module Ld4lIndexing
     end
 
     def process_interruption
+      @ss.commit
       @bookmark.persist
       @report.summarize(@doc_factory, @bookmark, :interrupted)
     end
@@ -153,9 +180,10 @@ module Ld4lIndexing
         initialize_bookmark
         trap_control_c
 
-        @report.record_counts(Counts.new(@ts))
+        @report.record_counts(Counts.new(@ts, @graph))
         index_works
         @report.summarize(@doc_factory, @bookmark)
+        @ss.commit
         @bookmark.clear
       rescue UserInputError
         puts
