@@ -43,10 +43,12 @@ module Ld4lIndexing
 
     QUERY_WORK_TOPIC = <<-END
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX dcterms: <http://purl.org/dc/terms/>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       SELECT ?topic ?label
       WHERE {
-        ?work ld4l:subject ?topic .
+        ?work dcterms:subject ?topic .
+        ?topic a ld4l:Topic .
         OPTIONAL { 
           ?topic skos:prefLabel ?label 
         }
