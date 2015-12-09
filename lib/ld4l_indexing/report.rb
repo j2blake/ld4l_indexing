@@ -36,7 +36,7 @@ module Ld4lIndexing
 
     def logit(message)
       m = "#{Time.new.strftime('%Y-%m-%d %H:%M:%S')} #{message}"
-      $stdout.puts(m)
+      puts(m)
       $stdout.flush
       @file.puts(m)
       @file.flush
