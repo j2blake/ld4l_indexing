@@ -102,7 +102,9 @@ module Ld4lIndexing
       doc['title_display'] = @names[0] unless @names.empty?
       doc['alt_names_t'] = @names.drop(1) if @names.size > 1
       doc['source_site_facet'] = @source_site if @source_site
+      doc['source_site_display'] = @source_site if @source_site
       doc['class_facet'] = @classes unless @classes.empty?
+      doc['class_display'] = @classes unless @classes.empty?
       doc['birthdate_t'] = @birthdate.shift unless @birthdate.empty?
       doc['created_token'] = @created.map {|w| w.to_token} unless @created.empty?
       doc['contributed_token'] = @contributed.map {|w| w.to_token} unless @contributed.empty?

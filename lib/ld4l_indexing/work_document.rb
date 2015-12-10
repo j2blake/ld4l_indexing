@@ -176,7 +176,9 @@ module Ld4lIndexing
       doc['title_display'] = @titles[0] unless @titles.empty?
       doc['alt_titles_t'] = @titles.drop(1) if @titles.size > 1
       doc['source_site_facet'] = @source_site if @source_site
+      doc['source_site_display'] = @source_site if @source_site
       doc['class_facet'] = @classes unless @classes.empty?
+      doc['class_display'] = @classes unless @classes.empty?
       doc['language_display'] = @languages unless @languages.empty?
       doc['language_facet'] = @languages unless @languages.empty?
       doc['subject_token'] = @topics.map {|t| t.to_token} unless @topics.empty?
