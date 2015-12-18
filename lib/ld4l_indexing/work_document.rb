@@ -45,12 +45,13 @@ module Ld4lIndexing
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       PREFIX dcterms: <http://purl.org/dc/terms/>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX foaf: <http://http://xmlns.com/foaf/0.1/>
       SELECT ?topic ?label
       WHERE {
         ?work dcterms:subject ?topic .
         ?topic a ld4l:Topic .
         OPTIONAL { 
-          ?topic skos:prefLabel ?label 
+          ?topic foaf:name ?label 
         }
       } LIMIT 1000
     END
@@ -171,8 +172,10 @@ module Ld4lIndexing
     end
 
     def assemble_document()
+      @classes.delete("Work")
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
+      doc['category_facet'] = "Work"
       doc['title_display'] = @titles[0] unless @titles.empty?
       doc['alt_titles_t'] = @titles.drop(1) if @titles.size > 1
       doc['source_site_facet'] = @source_site if @source_site

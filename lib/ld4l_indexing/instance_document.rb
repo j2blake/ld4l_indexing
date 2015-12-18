@@ -190,8 +190,10 @@ module Ld4lIndexing
     end
 
     def assemble_document()
+      @classes.delete("Instance")
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
+      doc['category_facet'] = "Instance"
       doc['title_display'] = @titles[0] unless @titles.empty?
       doc['alt_titles_t'] = @titles.drop(1) if @titles.size > 1
       doc['source_site_facet'] = @source_site if @source_site

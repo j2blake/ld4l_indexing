@@ -18,7 +18,7 @@ module Ld4lIndexing
 
   class AgentDocument
     include DocumentBase
-    
+
     PROP_NAME = 'http://http://xmlns.com/foaf/0.1/name'
     PROP_BIRTHDATE = 'http://schema.org/birthDate'
 
@@ -99,6 +99,7 @@ module Ld4lIndexing
     def assemble_document()
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
+      doc['category_facet'] = "Agent"
       doc['title_display'] = @names[0] unless @names.empty?
       doc['alt_names_t'] = @names.drop(1) if @names.size > 1
       doc['source_site_facet'] = @source_site if @source_site
