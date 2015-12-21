@@ -161,7 +161,6 @@ module Ld4lIndexing
     end
 
     def assemble_document()
-      @classes.delete("Work")
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
       doc['uri_token'] = @uri
@@ -170,8 +169,8 @@ module Ld4lIndexing
       doc['alt_titles_t'] = @titles.drop(1) if @titles.size > 1
       doc['source_site_facet'] = @source_site if @source_site
       doc['source_site_display'] = @source_site if @source_site
-      doc['class_facet'] = @classes unless @classes.empty?
       doc['class_display'] = @classes unless @classes.empty?
+      doc['class_facet'] = @classes.reject {|c| c == 'Work'} unless @classes.empty?
       doc['language_display'] = @languages unless @languages.empty?
       doc['language_facet'] = @languages unless @languages.empty?
       doc['subject_token'] = @topics.map {|t| t.to_json} unless @topics.empty?
