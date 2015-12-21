@@ -23,11 +23,6 @@ module Ld4lIndexing
         }
       } LIMIT 1000
     END
-
-    attr_reader :uri
-    attr_reader :properties
-    attr_reader :values
-    attr_reader :document
     #
     def initialize(uri, ts, stats)
       @uri = uri
@@ -35,10 +30,14 @@ module Ld4lIndexing
       @source_site = figure_source_site(uri)
       @stats = stats
 
-      get_properties
-      get_values
-      assemble_document
-      @stats.record(self)
+      begin
+        get_properties
+        get_values
+        assemble_document
+        @stats.record(self)
+      rescue
+        raise DocumentError.new($!, self)
+      end
     end
 
     def get_values()

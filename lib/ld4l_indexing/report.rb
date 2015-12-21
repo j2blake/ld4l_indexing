@@ -14,9 +14,16 @@ module Ld4lIndexing
     end
 
     def log_document_error(type, uri, doc, error)
-      doc_string = doc ? doc.document : "NO DOCUMENT FOR #{uri}"
       backtrace = error.backtrace.join("\n   ")
-      logit "%s %s\n%s\n   %s" % [type, doc_string, error, backtrace]
+      logit "%s %s\n%s\n   %s" % [type, error, doc_error_display(doc), backtrace]
+    end
+    
+    def doc_error_display(doc)
+      if (doc.document)
+        "Solr document: " + doc.document
+      else
+        "uri= %s, properties= %s, values= %s" % [doc.uri, doc.properties.inspect, doc.values.inspect]
+      end
     end
     
     def progress(type, offset, found)

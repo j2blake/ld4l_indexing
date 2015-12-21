@@ -19,7 +19,6 @@ require "ld4l_indexing/report"
 require "ld4l_indexing/solr_server"
 require "ld4l_indexing/uri_discoverer"
 require "ld4l_indexing/version"
-
 require "ld4l_indexing/document_base"
 require "ld4l_indexing/agent_document"
 require "ld4l_indexing/instance_document"
@@ -38,5 +37,15 @@ module Ld4lIndexing
 
   # What did you ask for?
   class UserInputError < StandardError
+  end
+
+  # Couldn't fully create the document
+  class DocumentError < StandardError
+    attr_reader :cause
+    attr_reader :doc
+    def initialize(cause, doc)
+      @cause = cause
+      @doc = doc
+    end
   end
 end

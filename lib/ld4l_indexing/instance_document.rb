@@ -56,11 +56,6 @@ module Ld4lIndexing
         ?sm rdf:value ?value
       } LIMIT 1000
     END
-
-    attr_reader :uri
-    attr_reader :properties
-    attr_reader :values
-    attr_reader :document
     #
     def initialize(uri, ts, stats)
       @uri = uri
@@ -68,10 +63,14 @@ module Ld4lIndexing
       @source_site = figure_source_site(uri)
       @stats = stats
 
-      get_properties
-      get_values
-      assemble_document
-      @stats.record(self)
+      begin
+        get_properties
+        get_values
+        assemble_document
+        @stats.record(self)
+      rescue
+        raise DocumentError.new($!, self)
+      end
     end
 
     def get_values()
@@ -154,7 +153,7 @@ module Ld4lIndexing
         end
       end
     end
-    
+
     def get_holdings()
       results = QueryRunner.new(QUERY_SHELF_MARK).bind_uri('instance', @uri).execute(@ts)
       @holdings = results.each.map {|row| row['value'] }.select{|v| v}

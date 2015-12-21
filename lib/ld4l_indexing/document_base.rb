@@ -21,6 +21,11 @@ module Ld4lIndexing
         } 
       } LIMIT 100
     END
+
+    attr_reader :uri
+    attr_reader :properties
+    attr_reader :values
+    attr_reader :document
     #
     def figure_source_site(uri)
       DocumentFactory::GRAPH_NAMES.each_pair do |site, graph|

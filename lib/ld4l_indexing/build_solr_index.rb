@@ -136,6 +136,8 @@ module Ld4lIndexing
           begin
             doc = @doc_factory.document(type, uri)
             @ss.add_document(doc.document) if doc
+          rescue DocumentError
+            @report.log_document_error(type, uri, $!.doc, $!.cause)
           rescue
             @report.log_document_error(type, uri, doc, $!)
           end
