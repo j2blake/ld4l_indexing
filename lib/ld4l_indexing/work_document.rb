@@ -3,7 +3,7 @@ module Ld4lIndexing
     include DocumentBase
 
     LOCAL_URI_PREFIX = 'http://draft.ld4l.org/'
-    
+
     QUERY_WORK_TOPIC = <<-END
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -14,7 +14,7 @@ module Ld4lIndexing
         ?work dcterms:subject ?topic .
         ?topic a ld4l:Topic .
         OPTIONAL { 
-          ?topic foaf:name ?label 
+          ?topic skos:prefLabel ?label 
         }
       } LIMIT 1000
     END
@@ -50,6 +50,14 @@ module Ld4lIndexing
       SELECT ?lang 
       WHERE { 
         ?w dc:language ?lang .
+      } LIMIT 1000
+    END
+
+    QUERY_EXTENT_OF_INSTANCE = <<-END
+      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      SELECT ?extent 
+      WHERE { 
+        ?i ld4l:extent ?extent .
       } LIMIT 1000
     END
 
@@ -105,8 +113,23 @@ module Ld4lIndexing
       results.each do |row|
         instance_uri = row['instance']
         if (instance_uri)
-          @instances << {uri: instance_uri, label: get_titles_for(instance_uri).shift, id: DocumentFactory::uri_to_id(instance_uri)}
+          extent = get_extent_for_instance(instance_uri)
+          instance = {}
+          instance[:uri] = instance_uri
+          instance[:label] = get_titles_for(instance_uri).shift
+          instance[:id] = DocumentFactory::uri_to_id(instance_uri)
+          instance[:extent] = extent if extent
+          @instances << instance
         end
+      end
+    end
+
+    def get_extent_for_instance(instance_uri)
+      results = QueryRunner.new(QUERY_EXTENT_OF_INSTANCE).bind_uri('i', instance_uri).execute(@ts)
+      if results.empty?
+        nil
+      else
+        results[0]['extent']
       end
     end
 
@@ -141,6 +164,7 @@ module Ld4lIndexing
       @classes.delete("Work")
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
+      doc['uri_token'] = @uri
       doc['category_facet'] = "Work"
       doc['title_display'] = @titles[0] unless @titles.empty?
       doc['alt_titles_t'] = @titles.drop(1) if @titles.size > 1

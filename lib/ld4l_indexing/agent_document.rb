@@ -82,6 +82,7 @@ module Ld4lIndexing
     def assemble_document()
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
+      doc['uri_token'] = @uri
       doc['category_facet'] = "Agent"
       doc['title_display'] = @names[0] unless @names.empty?
       doc['alt_names_t'] = @names.drop(1) if @names.size > 1

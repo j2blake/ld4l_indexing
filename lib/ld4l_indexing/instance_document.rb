@@ -177,6 +177,7 @@ module Ld4lIndexing
       @classes.delete("Instance")
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
+      doc['uri_token'] = @uri
       doc['category_facet'] = "Instance"
       doc['title_display'] = @titles[0] unless @titles.empty?
       doc['alt_titles_t'] = @titles.drop(1) if @titles.size > 1
