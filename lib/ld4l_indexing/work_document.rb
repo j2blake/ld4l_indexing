@@ -61,6 +61,14 @@ module Ld4lIndexing
       } LIMIT 1000
     END
 
+    QUERY_RELATED_WORKS = <<-END
+      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      SELECT ?p ?related 
+      WHERE { 
+        ?w ?p ?related .
+        ?related a ld4l:Work
+      } LIMIT 10000
+    END
     #
     def initialize(uri, ts, stats)
       @uri = uri
@@ -85,6 +93,7 @@ module Ld4lIndexing
       get_instances
       get_creators_and_contributors
       get_languages
+      get_related_works
       @values = {
         'classes' => @classes,
         'titles' => @titles,
@@ -160,6 +169,20 @@ module Ld4lIndexing
       end
     end
 
+    def get_related_works()
+      @related = []
+      results = QueryRunner.new(QUERY_RELATED_WORKS).bind_uri('w', @uri).execute(@ts)
+      results.each do |row|
+        uri = row['related']
+        related = {}
+        related['uri'] = uri,
+        related['property'] = row['p'],
+        related['label'] = get_titles_for(uri).shift
+        related['id'] = DocumentFactory::uri_to_id(uri) if uri.start_with?(LOCAL_URI_PREFIX)
+        @related << related
+      end
+    end
+
     def assemble_document()
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
@@ -178,6 +201,7 @@ module Ld4lIndexing
       doc['instance_token'] = @instances.map {|i| i.to_json}
       doc['creator_token'] = @creators.map {|c| c.to_json} unless @creators.empty?
       doc['contributor_token'] = @contributors.map {|c| c.to_json} unless @contributors.empty?
+      doc['related_works_token'] = @related.map {|r| r.to_json} unless @related.empty?
       doc['text'] = @titles + (@topics + @creators + @contributors).map {|t| t[:label]}
       @document = doc
     end
