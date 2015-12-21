@@ -1,21 +1,4 @@
 module Ld4lIndexing
-  class WorkInfo
-    attr_reader :uri
-    attr_reader :title
-    def initialize(uri, title)
-      @uri = uri
-      @title = title
-    end
-
-    def to_token()
-      "%s+++++%s" % [@title, DocumentFactory::uri_to_id(@uri)]
-    end
-
-    def to_string()
-      "Work: %s %s" %[@title, @uri]
-    end
-  end
-
   class AgentDocument
     include DocumentBase
 
@@ -88,9 +71,9 @@ module Ld4lIndexing
         title = row['title'] || 'NO TITLE'
         if row['work']
           if row['isAuthor']
-            @created << WorkInfo.new(row['work'], title)
+            @created << {uri: row['work'], label: title, id: DocumentFactory::uri_to_id(row['work'])}
           else
-            @contributed << WorkInfo.new(row['work'], title)
+            @contributed << {uri: row['work'], label: title, id: DocumentFactory::uri_to_id(row['work'])}
           end
         end
       end
@@ -107,9 +90,9 @@ module Ld4lIndexing
       doc['class_facet'] = @classes unless @classes.empty?
       doc['class_display'] = @classes unless @classes.empty?
       doc['birthdate_t'] = @birthdate.shift unless @birthdate.empty?
-      doc['created_token'] = @created.map {|w| w.to_token} unless @created.empty?
-      doc['contributed_token'] = @contributed.map {|w| w.to_token} unless @contributed.empty?
-      doc['text'] = @names + @created.map {|w| w.title} + @contributed.map {|w| w.title}
+      doc['created_token'] = @created.map {|w| w.to_json} unless @created.empty?
+      doc['contributed_token'] = @contributed.map {|w| w.to_json} unless @contributed.empty?
+      doc['text'] = @names + (@created + @contributed).map {|c| c[:label]}
       @document = doc
     end
   end

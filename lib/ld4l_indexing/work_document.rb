@@ -1,46 +1,9 @@
 module Ld4lIndexing
-  class AgentInfo
-    attr_reader :uri
-    attr_reader :name
-    def initialize(uri, name)
-      @uri = uri
-      @name = name
-    end
-
-    def to_token()
-      "%s+++++%s" % [@name, DocumentFactory::uri_to_id(@uri)]
-    end
-
-    def to_string()
-      "Agent: %s %s" % [@name, @uri]
-    end
-  end
-
-  class Topic
-    LOCAL_URI_PREFIX = 'http://draft.ld4l.org/'
-    attr_reader :uri
-    attr_reader :label
-    def initialize(uri, label)
-      @uri = uri
-      @label = label
-    end
-
-    def to_token()
-      if @uri.start_with?(LOCAL_URI_PREFIX)
-        @label
-      else
-        "%s+++++%s" % [@label, @uri]
-      end
-    end
-
-    def to_string()
-      "Topic: %s %s" %[@label, @uri]
-    end
-  end
-
   class WorkDocument
     include DocumentBase
 
+    LOCAL_URI_PREFIX = 'http://draft.ld4l.org/'
+    
     QUERY_WORK_TOPIC = <<-END
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -118,7 +81,7 @@ module Ld4lIndexing
         'classes' => @classes,
         'titles' => @titles,
         'topics' => @topics,
-        'instance_uris' => @instance_uris,
+        'instances' => @instances,
         'creators' => @creators,
         'contributors' => @contributors  }
     end
@@ -128,20 +91,22 @@ module Ld4lIndexing
       results = QueryRunner.new(QUERY_WORK_TOPIC).bind_uri('work', @uri).execute(@ts)
       results.each do |row|
         if row['topic']
-          if row['label']
-            @topics << Topic.new(row['topic'], row['label'])
-          else
-            @topics << Topic.new(row['topic'], 'NO LABEL')
-          end
+          topic = {}
+          topic[:label] = row['label'] ? row['label'] : 'NO LABEL'
+          topic[:uri] = row['topic'] unless row['topic'].start_with?(LOCAL_URI_PREFIX)
+          @topics << topic
         end
       end
     end
 
     def get_instances()
-      @instance_uris = []
+      @instances = []
       results = QueryRunner.new(QUERY_INSTANCES_OF_WORK).bind_uri('work', @uri).execute(@ts)
       results.each do |row|
-        @instance_uris << row['instance'] if row['instance']
+        instance_uri = row['instance']
+        if (instance_uri)
+          @instances << {uri: instance_uri, label: get_titles_for(instance_uri).shift, id: DocumentFactory::uri_to_id(instance_uri)}
+        end
       end
     end
 
@@ -152,10 +117,11 @@ module Ld4lIndexing
       results.each do |row|
         name = row['name'] || 'NO NAME'
         if row['agent']
+          agent_uri = row['agent']
           if row['isAuthor']
-            @creators << AgentInfo.new(row['agent'], name)
+            @creators << {uri: agent_uri, label: name, id: DocumentFactory::uri_to_id(agent_uri)}
           else
-            @contributors << AgentInfo.new(row['agent'], name)
+            @contributors << {uri: agent_uri, label: name, id: DocumentFactory::uri_to_id(agent_uri)}
           end
         end
       end
@@ -184,12 +150,12 @@ module Ld4lIndexing
       doc['class_display'] = @classes unless @classes.empty?
       doc['language_display'] = @languages unless @languages.empty?
       doc['language_facet'] = @languages unless @languages.empty?
-      doc['subject_token'] = @topics.map {|t| t.to_token} unless @topics.empty?
-      doc['subject_topic_facet'] = @topics.map {|t| t.label} unless @topics.empty?
-      doc['instance_token'] = @instance_uris.map {|i| "%s+++++%s" % [get_titles_for(i).shift, DocumentFactory::uri_to_id(i)]}
-      doc['creator_token'] = @creators.map {|c| c.to_token} unless @creators.empty?
-      doc['contributor_token'] = @contributors.map {|c| c.to_token} unless @contributors.empty?
-      doc['text'] = @titles + (@topics.map {|t| t.label}) + (@creators.map {|c| c.name}) + (@contributors.map {|c| c.name})
+      doc['subject_token'] = @topics.map {|t| t.to_json} unless @topics.empty?
+      doc['subject_topic_facet'] = @topics.map {|t| t[:label]} unless @topics.empty?
+      doc['instance_token'] = @instances.map {|i| i.to_json}
+      doc['creator_token'] = @creators.map {|c| c.to_json} unless @creators.empty?
+      doc['contributor_token'] = @contributors.map {|c| c.to_json} unless @contributors.empty?
+      doc['text'] = @titles + (@topics + @creators + @contributors).map {|t| t[:label]}
       @document = doc
     end
 

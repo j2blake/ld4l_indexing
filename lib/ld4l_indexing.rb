@@ -3,6 +3,7 @@ $LOAD_PATH.unshift File.expand_path('../../../triple_store_controller/lib', __FI
 require 'triple_store_drivers'
 require 'triple_store_controller'
 
+require 'json'
 require 'rdf'
 require 'rdf/ntriples'
 

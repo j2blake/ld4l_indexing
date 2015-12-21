@@ -1,21 +1,4 @@
 module Ld4lIndexing
-  class IdentifierInfo
-    attr_reader :localname
-    attr_reader :value
-    def initialize(type_uri, value)
-      @localname = DocumentFactory::uri_localname(type_uri)
-      @value = value
-    end
-
-    def to_token()
-      "%s+++++%s" % [@localname, @value]
-    end
-
-    def to_string()
-      "IdentifierInfo: %s: %s" % [@localname, @value]
-    end
-  end
-
   class InstanceDocument
     include DocumentBase
 
@@ -119,7 +102,8 @@ module Ld4lIndexing
       @instance_of = []
       @properties.each do |prop|
         if prop['p'] == PROP_INSTANCE_OF
-          @instance_of << prop['o']
+          uri = prop['o']
+          @instance_of << { uri: uri, label: get_titles_for(uri).shift, id: DocumentFactory::uri_to_id(uri) }
         end
       end
     end
@@ -150,7 +134,7 @@ module Ld4lIndexing
             types << row['type']
           end
           types.delete(TYPE_IDENTIFIER)
-          @identifiers << IdentifierInfo.new(types.shift || TYPE_IDENTIFIER, value) if value
+          @identifiers << { localname: DocumentFactory::uri_localname(types.shift || TYPE_IDENTIFIER), label: value} if value
         end
       end
     end
@@ -200,10 +184,10 @@ module Ld4lIndexing
       doc['source_site_display'] = @source_site if @source_site
       doc['class_facet'] = @classes unless @classes.empty?
       doc['class_display'] = @classes unless @classes.empty?
-      doc['instance_of_token'] = @instance_of.map { |uri| "%s+++++%s" % [get_titles_for(uri).shift, DocumentFactory::uri_to_id(uri)] } unless @instance_of.empty?
+      doc['instance_of_token'] = @instance_of.map { |i| i.to_json} unless @instance_of.empty?
       doc['worldcat_id_token'] = @worldcat_ids unless @worldcat_ids.empty?
       doc['same_as_token'] = @same_as unless @same_as.empty?
-      doc['identifier_token'] = @identifiers.map {|i| "%s+++++%s" % [i.localname, i.value]} unless @identifiers.empty?
+      doc['identifier_token'] = @identifiers.map {|i| i.to_json} unless @identifiers.empty?
       doc['publisher_t'] = @publishers unless @publishers.empty?
       doc['holding_t'] = @holdings unless @holdings.empty?
       doc['extent_t'] = @extents unless @extents.empty?
