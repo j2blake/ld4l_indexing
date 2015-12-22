@@ -28,11 +28,16 @@ module Ld4lIndexing
     end
 
     def execute(ts)
+      begin
       result = nil
       ts.sparql_query(@query) do |resp|
         result = parse_response(resp)
       end
       result
+      rescue
+        puts "FAILING QUERY: " + @query
+        raise
+      end
     end
 
     def parse_response(resp)

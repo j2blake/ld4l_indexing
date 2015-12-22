@@ -9,12 +9,16 @@ module Ld4lIndexing
       PREFIX dcterms: <http://purl.org/dc/terms/>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX foaf: <http://http://xmlns.com/foaf/0.1/>
-      SELECT ?topic ?label
+      SELECT ?topic ?label ?type
       WHERE {
         ?work dcterms:subject ?topic .
-        ?topic a ld4l:Topic .
         OPTIONAL { 
           ?topic skos:prefLabel ?label 
+          BIND('topic' as ?type) 
+        }
+        OPTIONAL { 
+          ?topic foaf:name ?label 
+          BIND('person' as ?type) 
         }
       } LIMIT 1000
     END
@@ -109,8 +113,9 @@ module Ld4lIndexing
       results.each do |row|
         if row['topic']
           topic = {}
-          topic[:label] = row['label'] ? row['label'] : 'NO LABEL'
+          topic[:label] = row['label'] ? row['label'] : DocumentFactory.uri_localname(row['topic'])
           topic[:uri] = row['topic'] unless row['topic'].start_with?(LOCAL_URI_PREFIX)
+          topic[:type] = row['type'] if row['type']
           @topics << topic
         end
       end
