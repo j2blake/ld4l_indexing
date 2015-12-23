@@ -51,9 +51,12 @@ module Ld4lIndexing
 
     QUERY_LANGUAGES = <<-END
       PREFIX dc: <http://purl.org/dc/terms/>
-      SELECT ?lang 
+      SELECT ?lang ?label
       WHERE { 
         ?w dc:language ?lang .
+        OPTIONAL {
+          ?lang rdfs:label ?label .
+        }
       } LIMIT 1000
     END
 
@@ -112,9 +115,11 @@ module Ld4lIndexing
       results = QueryRunner.new(QUERY_WORK_TOPIC).bind_uri('work', @uri).execute(@ts)
       results.each do |row|
         if row['topic']
+          t = row['topic']
           topic = {}
-          topic[:label] = row['label'] ? row['label'] : DocumentFactory.uri_localname(row['topic'])
-          topic[:uri] = row['topic'] unless row['topic'].start_with?(LOCAL_URI_PREFIX)
+          topic[:label] = row['label'] || DocumentFactory.uri_localname(t)
+          topic[:uri] = t 
+          topic[:id] = DocumentFactory.uri_to_id(t) if t.start_with?(LOCAL_URI_PREFIX)
           topic[:type] = row['type'] if row['type']
           @topics << topic
         end
@@ -169,7 +174,7 @@ module Ld4lIndexing
       results = QueryRunner.new(QUERY_LANGUAGES).bind_uri('w', @uri).execute(@ts)
       results.each do |row|
         if row['lang']
-          @languages << (LanguageReference.lookup(row['lang']) || DocumentFactory.uri_localname(row['lang']))
+          @languages << row['label'] || LanguageReference.lookup(row['lang']) || DocumentFactory.uri_localname(row['lang'])
         end
       end
     end
