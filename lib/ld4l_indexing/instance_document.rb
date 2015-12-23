@@ -5,7 +5,7 @@ module Ld4lIndexing
     NAMESPACE_WORLDCAT = 'http://www.worldcat.org/oclc/'
     PROP_SAME_AS = 'http://www.w3.org/2002/07/owl#sameAs'
 
-    PROP_INSTANCE_OF = 'http://ld4l.org/ontology/bib/instanceOf'
+    PROP_INSTANCE_OF = 'http://ld4l.org/ontology/bib/isInstanceOf'
     PROP_IDENTIFIED_BY = 'http://ld4l.org/ontology/bib/identifiedBy'
     PROP_HAS_PROVISION = 'http://ld4l.org/ontology/bib/hasProvision'
     PROP_EXTENT = 'http://ld4l.org/ontology/bib/extent'
@@ -28,7 +28,7 @@ module Ld4lIndexing
       PREFIX dc: <http://purl.org/dc/elements/1.1/>
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       PREFIX prov: <http://www.w3.org/ns/prov#>
-      PREFIX foaf: <http://http://xmlns.com/foaf/0.1/>
+      PREFIX foaf: <http://xmlns.com/foaf/0.1/>
       SELECT ?agent_name, ?location_name, ?date 
       WHERE {
         ?provision a ld4l:PublisherProvision .

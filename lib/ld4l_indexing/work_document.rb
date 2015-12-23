@@ -8,7 +8,7 @@ module Ld4lIndexing
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       PREFIX dcterms: <http://purl.org/dc/terms/>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-      PREFIX foaf: <http://http://xmlns.com/foaf/0.1/>
+      PREFIX foaf: <http://xmlns.com/foaf/0.1/>
       SELECT ?topic ?label ?type
       WHERE {
         ?work dcterms:subject ?topic .
@@ -27,13 +27,13 @@ module Ld4lIndexing
     PREFIX ld4l: <http://ld4l.org/ontology/bib/>
     SELECT ?instance 
     WHERE {
-      ?instance ld4l:instanceOf ?work .
+      ?instance ld4l:isInstanceOf ?work .
     } LIMIT 1000
     END
 
     QUERY_CONTRIBUTORS = <<-END
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
-      PREFIX foaf: <http://http://xmlns.com/foaf/0.1/>
+      PREFIX foaf: <http://xmlns.com/foaf/0.1/>
       PREFIX prov: <http://www.w3.org/ns/prov#>
       SELECT ?agent ?name ?isAuthor 
       WHERE { 

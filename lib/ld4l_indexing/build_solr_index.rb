@@ -18,7 +18,7 @@ module Ld4lIndexing
     SOLR_BASE_URL = 'http://localhost:8983/solr/blacklight-core'
 
     QUERY_FIND_AGENTS = <<-END
-      PREFIX foaf: <http://http://xmlns.com/foaf/0.1/>
+      PREFIX foaf: <http://xmlns.com/foaf/0.1/>
       SELECT ?uri
       WHERE {
         GRAPH ?g {

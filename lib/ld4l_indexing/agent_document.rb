@@ -2,7 +2,7 @@ module Ld4lIndexing
   class AgentDocument
     include DocumentBase
 
-    PROP_NAME = 'http://http://xmlns.com/foaf/0.1/name'
+    PROP_NAME = 'http://xmlns.com/foaf/0.1/name'
     PROP_BIRTHDATE = 'http://schema.org/birthDate'
 
     QUERY_CONTRIBUTIONS = <<-END

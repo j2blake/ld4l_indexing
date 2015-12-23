@@ -35,7 +35,7 @@ module Ld4lIndexing
       }
     END
     QUERY_COUNT_AGENTS = <<-END
-      PREFIX foaf: <http://http://xmlns.com/foaf/0.1/>
+      PREFIX foaf: <http://xmlns.com/foaf/0.1/>
       SELECT (count(?uri) as ?count)
       WHERE {
         GRAPH ?g {
