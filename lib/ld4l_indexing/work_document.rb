@@ -51,6 +51,7 @@ module Ld4lIndexing
 
     QUERY_LANGUAGES = <<-END
       PREFIX dc: <http://purl.org/dc/terms/>
+      PREFIX rdfs: <http://http://www.w3.org/2000/01/rdf-schema#>
       SELECT ?lang ?label
       WHERE { 
         ?w dc:language ?lang .
@@ -59,6 +60,7 @@ module Ld4lIndexing
         }
       } LIMIT 1000
     END
+    
     
     QUERY_EXTENT_OF_INSTANCE = <<-END
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
@@ -181,7 +183,7 @@ module Ld4lIndexing
       results = QueryRunner.new(QUERY_LANGUAGES).bind_uri('w', @uri).execute(@ts)
       results.each do |row|
         if row['lang']
-          @languages << row['label'] || LanguageReference.lookup(row['lang']) || DocumentFactory.uri_localname(row['lang'])
+          @languages << (row['label'] || LanguageReference.lookup(row['lang']) || DocumentFactory.uri_localname(row['lang']))
         end
       end
     end
