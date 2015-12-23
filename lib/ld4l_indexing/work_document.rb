@@ -59,7 +59,7 @@ module Ld4lIndexing
         }
       } LIMIT 1000
     END
-
+    
     QUERY_EXTENT_OF_INSTANCE = <<-END
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       SELECT ?extent 
@@ -121,7 +121,7 @@ module Ld4lIndexing
           t = row['topic']
           topic = {}
           topic[:label] = row['label'] || DocumentFactory.uri_localname(t)
-          topic[:uri] = t 
+          topic[:uri] = t
           topic[:id] = DocumentFactory.uri_to_id(t) if t.start_with?(LOCAL_URI_PREFIX)
           topic[:type] = row['type'] if row['type']
           @topics << topic
@@ -160,7 +160,11 @@ module Ld4lIndexing
       @contributors = []
       results = QueryRunner.new(QUERY_CONTRIBUTORS).bind_uri('w', @uri).execute(@ts)
       results.each do |row|
-        name = row['name'] || 'NO NAME'
+        name = row['name']
+        unless name
+          name = 'NO NAME'
+          @stats.warning 'NO NAME for creator/contributor'
+        end
         if row['agent']
           agent_uri = row['agent']
           if row['isAuthor']

@@ -67,7 +67,12 @@ module Ld4lIndexing
       @contributed = []
       results = QueryRunner.new(QUERY_CONTRIBUTIONS).bind_uri('agent', @uri).execute(@ts)
       results.each do |row|
-        title = row['title'] || 'NO TITLE'
+        title = row['title']
+        unless title
+          title = 'NO TITLE'
+          @stats.warning 'NO TITLE for created/contributed'
+        end
+
         if row['work']
           if row['isAuthor']
             @created << {uri: row['work'], label: title, id: DocumentFactory::uri_to_id(row['work'])}

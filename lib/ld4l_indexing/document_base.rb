@@ -55,12 +55,20 @@ module Ld4lIndexing
     end
 
     def get_titles_for(uri)
-      ts = []
+      titles = []
       values = QueryRunner.new(QUERY_TITLE).bind_uri('i', uri).execute(@ts)
       values.each do |row|
-        ts << row['title'] if row['title']
+        titles << row['title'] if row['title']
       end
-      ts.empty? ? ['NO TITLE'] : ts
+      if titles.empty?
+        titles << 'NO TITLE'
+        if uri == @uri
+          @stats.warning 'NO TITLE'
+        else
+          @stats.warning 'NO TITLE for uri'
+        end
+      end
+      titles
     end
   end
 end

@@ -28,6 +28,7 @@ module Ld4lIndexing
       @docs_count = 0
       @predicate_counts = CountsMap.new
       @value_counts = CountsMap.new
+      @warning_counts = CountsMap.new
     end
 
     def record(doc)
@@ -57,9 +58,13 @@ module Ld4lIndexing
         @value_counts.add_occurences(k, v.size) unless v.empty?
       end
     end
+    
+    def warning(str)
+      @warning_counts.add_occurences(str, 1)
+    end
 
     def to_s()
-      "\n%s: %s\nPREDICATES:\n%s\nVALUES:\n%s" % [@label, @docs_count, format_predicate_counts, format_value_counts]
+      "\n%s: %s\nPREDICATES:\n%s\nVALUES:\n%s\nWARNINGS:\n%s" % [@label, @docs_count, format_predicate_counts, format_value_counts, format_warnings]
     end
 
     def format_predicate_counts
@@ -73,6 +78,13 @@ module Ld4lIndexing
       header = "   count    #docs   value"
       @value_counts.to_a.sort {|a, b| a[0] <=> b[0]}.inject([header]) do |lines, item|
         lines << "%8d  %8d   %s" % [item[1].occurences, item[1].docs_count, item[0]]
+      end.join("\n")
+    end
+    
+    def format_warnings
+      header = "   count   message"
+      @warning_counts.to_a.sort {|a, b| a[0] <=> b[0]}.inject([header]) do |lines, item|
+        lines << "%8d   %s" % [item[1].occurences, item[0]]
       end.join("\n")
     end
   end
