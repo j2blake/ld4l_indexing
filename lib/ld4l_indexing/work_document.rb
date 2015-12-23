@@ -107,7 +107,10 @@ module Ld4lIndexing
         'topics' => @topics,
         'instances' => @instances,
         'creators' => @creators,
-        'contributors' => @contributors  }
+        'contributors' => @contributors,
+        'languages' => @languages,
+        'related' => @related,
+      }
     end
 
     def get_topics

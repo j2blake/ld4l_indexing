@@ -88,6 +88,7 @@ module Ld4lIndexing
         'instance_of' => @instance_of,
         'worldcat_ids' => @worldcat_ids,
         'same_as' => @same_as,
+        'identifiers' => @identifiers,
         'publishers' => @publishers,
         'holdings' => @holdings,
         'extent' => @extents,
