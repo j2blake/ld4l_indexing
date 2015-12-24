@@ -74,8 +74,13 @@ module Ld4lIndexing
       PREFIX ld4l: <http://ld4l.org/ontology/bib/>
       SELECT ?p ?related 
       WHERE { 
-        ?w ?p ?related .
-        ?related a ld4l:Work
+        {
+          ?w ?p ?related .
+          ?related a ld4l:Work .
+        } UNION {
+          ?related ?p ?w .
+          ?related a ld4l:Work .
+        }
       } LIMIT 10000
     END
     #
@@ -212,6 +217,7 @@ module Ld4lIndexing
       doc['source_site_facet'] = @source_site if @source_site
       doc['source_site_display'] = @source_site if @source_site
       doc['class_display'] = @classes unless @classes.empty?
+      doc['rdftype'] = @classes unless @classes.empty?
       doc['class_facet'] = @classes.reject {|c| c == 'Work'} unless @classes.empty?
       doc['language_display'] = @languages unless @languages.empty?
       doc['language_facet'] = @languages unless @languages.empty?

@@ -20,7 +20,7 @@ module Ld4lIndexing
     
     def doc_error_display(doc)
       if (doc.document)
-        "Solr document: " + doc.document
+        "Solr document: " + doc.document.inspect
       else
         "uri= %s, properties= %s, values= %s" % [doc.uri, doc.properties.inspect, doc.values.inspect]
       end
