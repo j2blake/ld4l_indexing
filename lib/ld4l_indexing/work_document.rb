@@ -199,8 +199,8 @@ module Ld4lIndexing
       results.each do |row|
         uri = row['related']
         related = {}
-        related['uri'] = uri,
-        related['property'] = row['p'],
+        related['uri'] = uri
+        related['property'] = row['p']
         related['label'] = get_titles_for(uri).shift
         related['id'] = DocumentFactory::uri_to_id(uri) if uri.start_with?(LOCAL_URI_PREFIX)
         @related << related
