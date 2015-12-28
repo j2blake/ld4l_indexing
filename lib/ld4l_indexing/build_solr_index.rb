@@ -60,7 +60,8 @@ module Ld4lIndexing
     def initialize
     end
 
-    def process_arguments(args)
+    def process_arguments()
+      args = Array.new(ARGV)
       replace_file = args.delete('REPLACE')
       @restart_run = args.delete('RESTART')
 
@@ -153,7 +154,7 @@ module Ld4lIndexing
 
     def run()
       begin
-        process_arguments(ARGV)
+        process_arguments
         @report = Report.new('ld4l_build_solr_index', @report_file_path)
         @report.log_header(ARGV)
 

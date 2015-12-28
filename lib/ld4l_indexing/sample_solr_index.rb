@@ -39,7 +39,8 @@ module Ld4lIndexing
     def initialize
     end
 
-    def process_arguments(args)
+    def process_arguments()
+      args = Array.new(ARGV)
       replace_file = args.delete('REPLACE')
       @restart_run = args.delete('RESTART')
 
@@ -61,10 +62,6 @@ module Ld4lIndexing
       raise UserInputError.new("#{args[1]} already exists -- specify REPLACE") if File.exist?(args[1]) unless replace_file
       raise UserInputError.new("Can't create #{args[1]}: no parent directory.") unless Dir.exist?(File.dirname(args[1]))
       @report_file_path = File.expand_path(args[1])
-    end
-
-    def log_header(args)
-      logit "ld4l_sample_solr_index #{args.join(' ')}"
     end
 
     def prepare_solr()
@@ -170,7 +167,7 @@ module Ld4lIndexing
 
     def run()
       begin
-        process_arguments(ARGV)
+        process_arguments
         @report = Report.new('ld4l_sample_solr_index', @report_file_path)
         @report.log_header(ARGV)
 
