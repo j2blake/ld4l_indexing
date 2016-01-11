@@ -31,7 +31,7 @@ module Ld4lIndexing
       }
     END
     QUERY_FIND_WORKS = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       SELECT ?uri
       WHERE {
         GRAPH ?g { 
@@ -40,7 +40,7 @@ module Ld4lIndexing
       }
     END
     QUERY_FIND_INSTANCES = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       SELECT ?uri
       WHERE {
         GRAPH ?g { 

@@ -17,7 +17,7 @@ module Ld4lIndexing
       }
     END
     QUERY_COUNT_WORKS = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       SELECT (count(?uri) as ?count)
       WHERE { 
         GRAPH ?g {
@@ -26,7 +26,7 @@ module Ld4lIndexing
       }
     END
     QUERY_COUNT_INSTANCES = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       SELECT (count(?uri) as ?count)
       WHERE { 
         GRAPH ?g {

@@ -5,15 +5,15 @@ module Ld4lIndexing
     NAMESPACE_WORLDCAT = 'http://www.worldcat.org/oclc/'
     PROP_SAME_AS = 'http://www.w3.org/2002/07/owl#sameAs'
 
-    PROP_INSTANCE_OF = 'http://ld4l.org/ontology/bib/isInstanceOf'
-    PROP_IDENTIFIED_BY = 'http://ld4l.org/ontology/bib/identifiedBy'
-    PROP_HAS_PROVISION = 'http://ld4l.org/ontology/bib/hasProvision'
-    PROP_EXTENT = 'http://ld4l.org/ontology/bib/extent'
-    PROP_DIMENSIONS = 'http://ld4l.org/ontology/bib/dimensions'
-    PROP_ILLUSTRATION_NOTE = 'http://ld4l.org/ontology/bib/illustrationNote'
-    PROP_SUPPLEMENTARY_CONTENT_NOTE = 'http://ld4l.org/ontology/bib/legacy/supplementaryContentNote'
+    PROP_INSTANCE_OF = 'http://bib.ld4l.org/ontology/isInstanceOf'
+    PROP_IDENTIFIED_BY = 'http://bib.ld4l.org/ontology/identifiedBy'
+    PROP_HAS_PROVISION = 'http://bib.ld4l.org/ontology/hasProvision'
+    PROP_EXTENT = 'http://bib.ld4l.org/ontology/extent'
+    PROP_DIMENSIONS = 'http://bib.ld4l.org/ontology/dimensions'
+    PROP_ILLUSTRATION_NOTE = 'http://bib.ld4l.org/ontology/illustrationNote'
+    PROP_SUPPLEMENTARY_CONTENT_NOTE = 'http://bib.ld4l.org/ontology/legacy/supplementaryContentNote'
 
-    TYPE_IDENTIFIER = 'http://ld4l.org/ontology/bib/Identifier'
+    TYPE_IDENTIFIER = 'http://bib.ld4l.org/ontology/Identifier'
 
     QUERY_IDENTIFIER_CONTENTS = <<-END
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -26,7 +26,7 @@ module Ld4lIndexing
 
     QUERY_PUBLISHER_PROVISION = <<-END
       PREFIX dc: <http://purl.org/dc/elements/1.1/>
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       PREFIX prov: <http://www.w3.org/ns/prov#>
       PREFIX foaf: <http://xmlns.com/foaf/0.1/>
       SELECT ?agent_name, ?location_name, ?date 
@@ -47,7 +47,7 @@ module Ld4lIndexing
     END
 
     QUERY_SHELF_MARK = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       SELECT  ?value
       WHERE {

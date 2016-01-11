@@ -8,26 +8,34 @@ module Ld4lIndexing
     def log_header(args)
       logit "#{@main_routine} #{args.join(' ')}"
     end
-    
+
     def record_counts(counts)
       logit "%{name}: %{triples} triples, %{works} works, %{instances} instances, %{agents} agents." % counts.values
     end
 
     def log_document_error(type, uri, doc, error)
       backtrace = error.backtrace.join("\n   ")
-      logit "%s %s\n%s\n   %s" % [type, error, doc_error_display(doc), backtrace]
-    end
-    
-    def doc_error_display(doc)
-      if (doc.document)
-        "Solr document: " + doc.document.inspect
+      if error.respond_to?(:cause)
+        logit "%s %s\n%s\n%s\n   %s" % [type, error, error.cause, doc_error_display(doc), backtrace]
       else
-        "uri= %s, properties= %s, values= %s" % [doc.uri, doc.properties.inspect, doc.values.inspect]
+        logit "%s %s\n%s\n   %s" % [type, error, doc_error_display(doc), backtrace]
       end
     end
-    
+
+    def doc_error_display(doc)
+      if doc
+        if doc.respond_to?(:document) && doc.document
+          "Solr document: " + doc.document.inspect
+        else
+          "uri= %s, properties= %s, values= %s" % [doc.uri, doc.properties.inspect, doc.values.inspect]
+        end
+      else
+        ""
+      end
+    end
+
     def progress(type, offset, found)
-      logit "Progress: %s, offset %d, found %d" % [type, offset, found] 
+      logit "Progress: %s, offset %d, found %d" % [type, offset, found]
     end
 
     def summarize(doc_factory, bookmark, status=:complete)

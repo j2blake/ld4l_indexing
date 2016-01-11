@@ -11,7 +11,7 @@ module Ld4lIndexing
     END
 
     QUERY_TITLE = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       SELECT ?title
       WHERE {

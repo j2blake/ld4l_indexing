@@ -5,7 +5,7 @@ module Ld4lIndexing
     LOCAL_URI_PREFIX = 'http://draft.ld4l.org/'
 
     QUERY_WORK_TOPIC = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       PREFIX dcterms: <http://purl.org/dc/terms/>
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -24,7 +24,7 @@ module Ld4lIndexing
     END
 
     QUERY_INSTANCES_OF_WORK = <<-END
-    PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+    PREFIX ld4l: <http://bib.ld4l.org/ontology/>
     SELECT ?instance 
     WHERE {
       ?instance ld4l:isInstanceOf ?work .
@@ -32,7 +32,7 @@ module Ld4lIndexing
     END
 
     QUERY_CONTRIBUTORS = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       PREFIX foaf: <http://xmlns.com/foaf/0.1/>
       PREFIX prov: <http://www.w3.org/ns/prov#>
       SELECT ?agent ?name ?isAuthor 
@@ -63,7 +63,7 @@ module Ld4lIndexing
     
     
     QUERY_EXTENT_OF_INSTANCE = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       SELECT ?extent 
       WHERE { 
         ?i ld4l:extent ?extent .
@@ -71,7 +71,7 @@ module Ld4lIndexing
     END
 
     QUERY_RELATED_WORKS = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       SELECT ?p ?related 
       WHERE { 
         {

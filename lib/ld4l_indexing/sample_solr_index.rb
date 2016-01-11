@@ -19,7 +19,7 @@ Usage: ld4l_sample_solr_index <number_of_works> <report_file> [REPLACE] [RESTART
 module Ld4lIndexing
   class SampleSolrIndex
     QUERY_FIND_WORKS = <<-END
-      PREFIX ld4l: <http://ld4l.org/ontology/bib/>
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       SELECT ?uri
       WHERE { 
         GRAPH ?g {
@@ -110,7 +110,7 @@ module Ld4lIndexing
               doc = @doc_factory.document(type, uri)
               if doc
                 @ss.add_document(doc.document)
-                index_instances(doc.values["instance_uris"])
+                index_instances(doc.values["instances"])
                 index_agents(doc.values['creators'].map {|c| c.uri})
                 index_agents(doc.values['contributors'].map {|c| c.uri})
               end
@@ -122,15 +122,16 @@ module Ld4lIndexing
       end
     end
 
-    def index_instances(uris)
-      uris.each do |uri|
+    def index_instances(instances)
+      instances.each do |instance|
+        uri = instance[:uri]
         begin
           doc = @doc_factory.document(:instance, uri)
           if doc
             @ss.add_document(doc.document)
           end
         rescue
-          log_document_error(:instance, uri, doc, $!)
+          @report.log_document_error(:instance, uri, doc, $!)
         end
       end
     end
@@ -143,7 +144,7 @@ module Ld4lIndexing
             @ss.add_document(doc.document)
           end
         rescue
-          log_document_error(:agent, uri, doc, $!)
+          @report.log_document_error(:agent, uri, doc, $!)
         end
       end
     end
