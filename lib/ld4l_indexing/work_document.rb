@@ -3,6 +3,8 @@ module Ld4lIndexing
     include DocumentBase
 
     LOCAL_URI_PREFIX = 'http://draft.ld4l.org/'
+    PROP_SAME_AS = 'http://www.w3.org/2002/07/owl#sameAs'
+    PROP_SEE_ALSO = 'http://www.w3.org/2000/01/rdf-schema#seeAlso'
 
     QUERY_WORK_TOPIC = <<-END
       PREFIX ld4l: <http://bib.ld4l.org/ontology/>
@@ -60,8 +62,7 @@ module Ld4lIndexing
         }
       } LIMIT 1000
     END
-    
-    
+
     QUERY_EXTENT_OF_INSTANCE = <<-END
       PREFIX ld4l: <http://bib.ld4l.org/ontology/>
       SELECT ?extent 
@@ -108,6 +109,8 @@ module Ld4lIndexing
       get_creators_and_contributors
       get_languages
       get_related_works
+      get_work_ids
+      get_work_links
       @values = {
         'classes' => @classes,
         'titles' => @titles,
@@ -117,6 +120,8 @@ module Ld4lIndexing
         'contributors' => @contributors,
         'languages' => @languages,
         'related' => @related,
+        'work_ids' => @work_ids,
+        'work_links' => @work_links,
       }
     end
 
@@ -207,6 +212,28 @@ module Ld4lIndexing
       end
     end
 
+    def get_work_ids()
+      @work_ids = []
+      @properties.each do |prop|
+        if prop['p'] == PROP_SEE_ALSO
+          uri = prop['o']
+          @work_ids << { uri: uri, localname: DocumentFactory::uri_localname(uri) }
+        end
+      end
+    end
+
+    def get_work_links()
+      @work_links = []
+      @properties.each do |prop|
+        if prop['p'] == PROP_SAME_AS
+          uri = prop['o']
+          if uri.start_with?(LOCAL_URI_PREFIX)
+            @work_links << { uri: uri, site: get_site_name(uri), id: DocumentFactory::uri_to_id(uri) }
+          end
+        end
+      end
+    end
+
     def assemble_document()
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
@@ -227,6 +254,8 @@ module Ld4lIndexing
       doc['creator_token'] = @creators.map {|c| c.to_json} unless @creators.empty?
       doc['contributor_token'] = @contributors.map {|c| c.to_json} unless @contributors.empty?
       doc['related_works_token'] = @related.map {|r| r.to_json} unless @related.empty?
+      doc['work_id_token'] = @work_ids.map {|r| r.to_json} unless @work_ids.empty?
+      doc['work_link_token'] = @work_links.map {|r| r.to_json} unless @work_links.empty?
       doc['text'] = @titles + (@topics + @creators + @contributors).map {|t| t[:label]}
       @document = doc
     end

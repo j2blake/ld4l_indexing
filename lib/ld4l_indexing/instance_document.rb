@@ -2,6 +2,7 @@ module Ld4lIndexing
   class InstanceDocument
     include DocumentBase
 
+    LOCAL_URI_PREFIX = 'http://draft.ld4l.org/'
     NAMESPACE_WORLDCAT = 'http://www.worldcat.org/oclc/'
     PROP_SAME_AS = 'http://www.w3.org/2002/07/owl#sameAs'
 
@@ -77,7 +78,7 @@ module Ld4lIndexing
       get_classes
       get_titles
       get_instance_of
-      get_worldcat_ids_and_same_as
+      get_worldcat_ids_instance_links_and_same_as
       get_identifiers
       get_publisher_provisions
       get_holdings
@@ -87,6 +88,7 @@ module Ld4lIndexing
         'titles' => @titles,
         'instance_of' => @instance_of,
         'worldcat_ids' => @worldcat_ids,
+        'instance_links' => @instance_links,
         'same_as' => @same_as,
         'identifiers' => @identifiers,
         'publishers' => @publishers,
@@ -94,7 +96,7 @@ module Ld4lIndexing
         'extent' => @extents,
         'dimensions' => @dimensions,
         'illustration_notes' => @illustration_notes,
-        'supplementary_content_notes' => @supplementary_content_notes
+        'supplementary_content_notes' => @supplementary_content_notes,
       }
     end
 
@@ -108,15 +110,19 @@ module Ld4lIndexing
       end
     end
 
-    def get_worldcat_ids_and_same_as()
+    def get_worldcat_ids_instance_links_and_same_as()
       @worldcat_ids = []
+      @instance_links = []
       @same_as = []
       @properties.each do |prop|
         if prop['p'] == PROP_SAME_AS
-          if prop['o'].start_with?(NAMESPACE_WORLDCAT)
-            @worldcat_ids << prop['o']
+          uri = prop['o']
+          if uri.start_with?(NAMESPACE_WORLDCAT)
+            @worldcat_ids << uri
+          elsif uri.start_with?(LOCAL_URI_PREFIX)
+            @instance_links << { uri: uri, site: get_site_name(uri), id: DocumentFactory::uri_to_id(uri) }
           else
-            @same_as << prop['o']
+            @same_as << uri
           end
         end
       end
@@ -187,6 +193,7 @@ module Ld4lIndexing
       doc['instance_of_token'] = @instance_of.map { |i| i.to_json} unless @instance_of.empty?
       doc['worldcat_id_token'] = @worldcat_ids unless @worldcat_ids.empty?
       doc['same_as_token'] = @same_as unless @same_as.empty?
+      doc['instance_link_token'] = @instance_links.map { |i| i.to_json} unless @instance_links.empty?
       doc['identifier_token'] = @identifiers.map {|i| i.to_json} unless @identifiers.empty?
       doc['publisher_t'] = @publishers unless @publishers.empty?
       doc['holding_t'] = @holdings unless @holdings.empty?

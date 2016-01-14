@@ -70,5 +70,9 @@ module Ld4lIndexing
       end
       titles
     end
+
+    def get_site_name(uri)
+      uri.split('/')[-2].capitalize
+    end
   end
 end
