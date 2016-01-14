@@ -8,13 +8,15 @@ If not found, return nil.
 We're looking for a statement like this:
 <http://id.loc.gov/vocabulary/languages/eng> <http://www.w3.org/2004/02/skos/core#prefLabel> "English"@en .
 
+[Shares a lot of code with Ld4lIndexing::TopicReference]
+
 =end
 
 module Ld4lIndexing
   class LanguageReference
     class << self
       begin
-        @@graph = RDF::Graph.load(File.expand_path('loc_lang.rdf', File.dirname(__FILE__)))
+        @@graph = RDF::Graph.load(File.join(File.dirname(__FILE__), '..', '..', 'data', 'loc_lang.rdf'))
         @@pref_label = RDF::URI.new('http://www.w3.org/2004/02/skos/core#prefLabel')
       end
 

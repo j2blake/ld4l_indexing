@@ -1,0 +1,1190 @@
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "North America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority> <http://id.loc.gov/authorities/sh85092455#concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#useFor> _:bnode10vocabularygeographicAreasn . 
+_:bnode10vocabularygeographicAreasn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+_:bnode10vocabularygeographicAreasn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+_:bnode10vocabularygeographicAreasn <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#useFor> _:bnode20vocabularygeographicAreasn . 
+_:bnode20vocabularygeographicAreasn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+_:bnode20vocabularygeographicAreasn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+_:bnode20vocabularygeographicAreasn <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "New France"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#useFor> _:bnode30vocabularygeographicAreasn . 
+_:bnode30vocabularygeographicAreasn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+_:bnode30vocabularygeographicAreasn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+_:bnode30vocabularygeographicAreasn <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Pacific Coast (North America)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/vocabulary/geographicAreas/collection_PastPresentGACSEntries> . 
+<http://id.loc.gov/vocabulary/geographicAreas/collection_PastPresentGACSEntries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#MADSCollection> . 
+<http://id.loc.gov/vocabulary/geographicAreas/collection_PastPresentGACSEntries> <http://www.w3.org/2000/01/rdf-schema#label> "Past and Present GACS Entries"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-ust> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-ust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-ust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-ust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-ust> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Southwest, New"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-ust> <http://www.w3.org/2000/01/rdf-schema#label> "Southwest, New"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-ust> <http://www.loc.gov/mads/rdf/v1#code> "n-ust"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-mx> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-mx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-mx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-mx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-mx> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mexico"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-mx> <http://www.w3.org/2000/01/rdf-schema#label> "Mexico"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-mx> <http://www.loc.gov/mads/rdf/v1#code> "n-mx"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-usl> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usl> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Middle Atlantic States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usl> <http://www.w3.org/2000/01/rdf-schema#label> "Middle Atlantic States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usl> <http://www.loc.gov/mads/rdf/v1#code> "n-usl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/np> . 
+<http://id.loc.gov/vocabulary/geographicAreas/np> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/np> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/np> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/np> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Great Plains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/np> <http://www.w3.org/2000/01/rdf-schema#label> "Great Plains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/np> <http://www.loc.gov/mads/rdf/v1#code> "np"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-usm> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usm> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mississippi River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usm> <http://www.w3.org/2000/01/rdf-schema#label> "Mississippi River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usm> <http://www.loc.gov/mads/rdf/v1#code> "n-usm"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-usn> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usn> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "New England"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usn> <http://www.w3.org/2000/01/rdf-schema#label> "New England"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usn> <http://www.loc.gov/mads/rdf/v1#code> "n-usn"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-us> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-us> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "United States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-us> <http://www.w3.org/2000/01/rdf-schema#label> "United States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-us> <http://www.loc.gov/mads/rdf/v1#code> "n-us"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-uso> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uso> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Ohio River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uso> <http://www.w3.org/2000/01/rdf-schema#label> "Ohio River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uso> <http://www.loc.gov/mads/rdf/v1#code> "n-uso"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cnp> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnp> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Prairie Provinces"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnp> <http://www.w3.org/2000/01/rdf-schema#label> "Prairie Provinces"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnp> <http://www.loc.gov/mads/rdf/v1#code> "n-cnp"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/nw> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nw> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "West Indies"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nw> <http://www.w3.org/2000/01/rdf-schema#label> "West Indies"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nw> <http://www.loc.gov/mads/rdf/v1#code> "nw"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-usp> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usp> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "West (U.S.)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usp> <http://www.w3.org/2000/01/rdf-schema#label> "West (U.S.)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usp> <http://www.loc.gov/mads/rdf/v1#code> "n-usp"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-use> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-use> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Northeastern States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-use> <http://www.w3.org/2000/01/rdf-schema#label> "Northeastern States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-use> <http://www.loc.gov/mads/rdf/v1#code> "n-use"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-gl> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-gl> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Greenland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-gl> <http://www.w3.org/2000/01/rdf-schema#label> "Greenland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-gl> <http://www.loc.gov/mads/rdf/v1#code> "n-gl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-usr> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usr> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "East (U.S.)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usr> <http://www.w3.org/2000/01/rdf-schema#label> "East (U.S.)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usr> <http://www.loc.gov/mads/rdf/v1#code> "n-usr"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cnh> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnh> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Hudson Bay"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnh> <http://www.w3.org/2000/01/rdf-schema#label> "Hudson Bay"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnh> <http://www.loc.gov/mads/rdf/v1#code> "n-cnh"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Canada"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2000/01/rdf-schema#label> "Canada"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#code> "n-cn"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-uss> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uss> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Missouri River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uss> <http://www.w3.org/2000/01/rdf-schema#label> "Missouri River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uss> <http://www.loc.gov/mads/rdf/v1#code> "n-uss"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-usa> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usa> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Appalachian Mountains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usa> <http://www.w3.org/2000/01/rdf-schema#label> "Appalachian Mountains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usa> <http://www.loc.gov/mads/rdf/v1#code> "n-usa"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/nl> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nl> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Great Lakes (North America) | Lake States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nl> <http://www.w3.org/2000/01/rdf-schema#label> "Great Lakes (North America) | Lake States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nl> <http://www.loc.gov/mads/rdf/v1#code> "nl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/nm> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nm> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mexico, Gulf of"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nm> <http://www.w3.org/2000/01/rdf-schema#label> "Mexico, Gulf of"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nm> <http://www.loc.gov/mads/rdf/v1#code> "nm"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-usc> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Middle West"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usc> <http://www.w3.org/2000/01/rdf-schema#label> "Middle West"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usc> <http://www.loc.gov/mads/rdf/v1#code> "n-usc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/nc> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Central America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nc> <http://www.w3.org/2000/01/rdf-schema#label> "Central America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nc> <http://www.loc.gov/mads/rdf/v1#code> "nc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cnm> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnm> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Maritime Provinces"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnm> <http://www.w3.org/2000/01/rdf-schema#label> "Maritime Provinces"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnm> <http://www.loc.gov/mads/rdf/v1#code> "n-cnm"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-xl> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-xl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-xl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-xl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-xl> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Saint Pierre and Miquelon"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-xl> <http://www.w3.org/2000/01/rdf-schema#label> "Saint Pierre and Miquelon"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-xl> <http://www.loc.gov/mads/rdf/v1#code> "n-xl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-usu> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Southern States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usu> <http://www.w3.org/2000/01/rdf-schema#label> "Southern States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usu> <http://www.loc.gov/mads/rdf/v1#code> "n-usu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/nr> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nr> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Rocky Mountains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nr> <http://www.w3.org/2000/01/rdf-schema#label> "Rocky Mountains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nr> <http://www.loc.gov/mads/rdf/v1#code> "nr"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/gau> . 
+<http://id.loc.gov/vocabulary/countries/gau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/gau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/gau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/gau> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Georgia"@en . 
+<http://id.loc.gov/vocabulary/countries/gau> <http://www.w3.org/2000/01/rdf-schema#label> "Georgia"@en . 
+<http://id.loc.gov/vocabulary/countries/gau> <http://www.loc.gov/mads/rdf/v1#code> "gau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/nmu> . 
+<http://id.loc.gov/vocabulary/countries/nmu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/nmu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/nmu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/nmu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "New Mexico"@en . 
+<http://id.loc.gov/vocabulary/countries/nmu> <http://www.w3.org/2000/01/rdf-schema#label> "New Mexico"@en . 
+<http://id.loc.gov/vocabulary/countries/nmu> <http://www.loc.gov/mads/rdf/v1#code> "nmu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/miu> . 
+<http://id.loc.gov/vocabulary/countries/miu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/miu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/miu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/miu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Michigan"@en . 
+<http://id.loc.gov/vocabulary/countries/miu> <http://www.w3.org/2000/01/rdf-schema#label> "Michigan"@en . 
+<http://id.loc.gov/vocabulary/countries/miu> <http://www.loc.gov/mads/rdf/v1#code> "miu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/pau> . 
+<http://id.loc.gov/vocabulary/countries/pau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/pau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/pau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/pau> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Pennsylvania"@en . 
+<http://id.loc.gov/vocabulary/countries/pau> <http://www.w3.org/2000/01/rdf-schema#label> "Pennsylvania"@en . 
+<http://id.loc.gov/vocabulary/countries/pau> <http://www.loc.gov/mads/rdf/v1#code> "pau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority> <http://id.loc.gov/authorities/subjects/sh85092455> . 
+<http://id.loc.gov/authorities/subjects/sh85092455> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/authorities/subjects/sh85092455> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/authorities/subjects/sh85092455> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "North America"@en . 
+<http://id.loc.gov/authorities/subjects/sh85092455> <http://www.w3.org/2000/01/rdf-schema#label> "North America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/onc> . 
+<http://id.loc.gov/vocabulary/countries/onc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/onc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/onc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/onc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Ontario"@en . 
+<http://id.loc.gov/vocabulary/countries/onc> <http://www.w3.org/2000/01/rdf-schema#label> "Ontario"@en . 
+<http://id.loc.gov/vocabulary/countries/onc> <http://www.loc.gov/mads/rdf/v1#code> "onc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/nyu> . 
+<http://id.loc.gov/vocabulary/countries/nyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/nyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/nyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/nyu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "New York (State)"@en . 
+<http://id.loc.gov/vocabulary/countries/nyu> <http://www.w3.org/2000/01/rdf-schema#label> "New York (State)"@en . 
+<http://id.loc.gov/vocabulary/countries/nyu> <http://www.loc.gov/mads/rdf/v1#code> "nyu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/nuc> . 
+<http://id.loc.gov/vocabulary/countries/nuc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/nuc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/nuc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/nuc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Nunavut"@en . 
+<http://id.loc.gov/vocabulary/countries/nuc> <http://www.w3.org/2000/01/rdf-schema#label> "Nunavut"@en . 
+<http://id.loc.gov/vocabulary/countries/nuc> <http://www.loc.gov/mads/rdf/v1#code> "nuc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/ksu> . 
+<http://id.loc.gov/vocabulary/countries/ksu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/ksu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/ksu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/ksu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Kansas"@en . 
+<http://id.loc.gov/vocabulary/countries/ksu> <http://www.w3.org/2000/01/rdf-schema#label> "Kansas"@en . 
+<http://id.loc.gov/vocabulary/countries/ksu> <http://www.loc.gov/mads/rdf/v1#code> "ksu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/ndu> . 
+<http://id.loc.gov/vocabulary/countries/ndu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/ndu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/ndu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/ndu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "North Dakota"@en . 
+<http://id.loc.gov/vocabulary/countries/ndu> <http://www.w3.org/2000/01/rdf-schema#label> "North Dakota"@en . 
+<http://id.loc.gov/vocabulary/countries/ndu> <http://www.loc.gov/mads/rdf/v1#code> "ndu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/gl> . 
+<http://id.loc.gov/vocabulary/countries/gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/gl> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Greenland"@en . 
+<http://id.loc.gov/vocabulary/countries/gl> <http://www.w3.org/2000/01/rdf-schema#label> "Greenland"@en . 
+<http://id.loc.gov/vocabulary/countries/gl> <http://www.loc.gov/mads/rdf/v1#code> "gl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/txu> . 
+<http://id.loc.gov/vocabulary/countries/txu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/txu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/txu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/txu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Texas"@en . 
+<http://id.loc.gov/vocabulary/countries/txu> <http://www.w3.org/2000/01/rdf-schema#label> "Texas"@en . 
+<http://id.loc.gov/vocabulary/countries/txu> <http://www.loc.gov/mads/rdf/v1#code> "txu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/iau> . 
+<http://id.loc.gov/vocabulary/countries/iau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/iau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/iau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/iau> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Iowa"@en . 
+<http://id.loc.gov/vocabulary/countries/iau> <http://www.w3.org/2000/01/rdf-schema#label> "Iowa"@en . 
+<http://id.loc.gov/vocabulary/countries/iau> <http://www.loc.gov/mads/rdf/v1#code> "iau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/wyu> . 
+<http://id.loc.gov/vocabulary/countries/wyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/wyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/wyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/wyu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Wyoming"@en . 
+<http://id.loc.gov/vocabulary/countries/wyu> <http://www.w3.org/2000/01/rdf-schema#label> "Wyoming"@en . 
+<http://id.loc.gov/vocabulary/countries/wyu> <http://www.loc.gov/mads/rdf/v1#code> "wyu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/ohu> . 
+<http://id.loc.gov/vocabulary/countries/ohu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/ohu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/ohu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/ohu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Ohio"@en . 
+<http://id.loc.gov/vocabulary/countries/ohu> <http://www.w3.org/2000/01/rdf-schema#label> "Ohio"@en . 
+<http://id.loc.gov/vocabulary/countries/ohu> <http://www.loc.gov/mads/rdf/v1#code> "ohu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/sdu> . 
+<http://id.loc.gov/vocabulary/countries/sdu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/sdu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/sdu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/sdu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "South Dakota"@en . 
+<http://id.loc.gov/vocabulary/countries/sdu> <http://www.w3.org/2000/01/rdf-schema#label> "South Dakota"@en . 
+<http://id.loc.gov/vocabulary/countries/sdu> <http://www.loc.gov/mads/rdf/v1#code> "sdu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/vtu> . 
+<http://id.loc.gov/vocabulary/countries/vtu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/vtu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/vtu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/vtu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Vermont"@en . 
+<http://id.loc.gov/vocabulary/countries/vtu> <http://www.w3.org/2000/01/rdf-schema#label> "Vermont"@en . 
+<http://id.loc.gov/vocabulary/countries/vtu> <http://www.loc.gov/mads/rdf/v1#code> "vtu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/cou> . 
+<http://id.loc.gov/vocabulary/countries/cou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/cou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/cou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/cou> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Colorado"@en . 
+<http://id.loc.gov/vocabulary/countries/cou> <http://www.w3.org/2000/01/rdf-schema#label> "Colorado"@en . 
+<http://id.loc.gov/vocabulary/countries/cou> <http://www.loc.gov/mads/rdf/v1#code> "cou"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/xl> . 
+<http://id.loc.gov/vocabulary/countries/xl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/xl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/xl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/xl> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Saint Pierre and Miquelon"@en . 
+<http://id.loc.gov/vocabulary/countries/xl> <http://www.w3.org/2000/01/rdf-schema#label> "Saint Pierre and Miquelon"@en . 
+<http://id.loc.gov/vocabulary/countries/xl> <http://www.loc.gov/mads/rdf/v1#code> "xl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/riu> . 
+<http://id.loc.gov/vocabulary/countries/riu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/riu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/riu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/riu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Rhode Island"@en . 
+<http://id.loc.gov/vocabulary/countries/riu> <http://www.w3.org/2000/01/rdf-schema#label> "Rhode Island"@en . 
+<http://id.loc.gov/vocabulary/countries/riu> <http://www.loc.gov/mads/rdf/v1#code> "riu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/mx> . 
+<http://id.loc.gov/vocabulary/countries/mx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/mx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/mx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/mx> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mexico"@en . 
+<http://id.loc.gov/vocabulary/countries/mx> <http://www.w3.org/2000/01/rdf-schema#label> "Mexico"@en . 
+<http://id.loc.gov/vocabulary/countries/mx> <http://www.loc.gov/mads/rdf/v1#code> "mx"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/mtu> . 
+<http://id.loc.gov/vocabulary/countries/mtu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/mtu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/mtu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/mtu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Montana"@en . 
+<http://id.loc.gov/vocabulary/countries/mtu> <http://www.w3.org/2000/01/rdf-schema#label> "Montana"@en . 
+<http://id.loc.gov/vocabulary/countries/mtu> <http://www.loc.gov/mads/rdf/v1#code> "mtu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/aru> . 
+<http://id.loc.gov/vocabulary/countries/aru> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/aru> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/aru> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/aru> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Arkansas"@en . 
+<http://id.loc.gov/vocabulary/countries/aru> <http://www.w3.org/2000/01/rdf-schema#label> "Arkansas"@en . 
+<http://id.loc.gov/vocabulary/countries/aru> <http://www.loc.gov/mads/rdf/v1#code> "aru"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/nbu> . 
+<http://id.loc.gov/vocabulary/countries/nbu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/nbu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/nbu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/nbu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Nebraska"@en . 
+<http://id.loc.gov/vocabulary/countries/nbu> <http://www.w3.org/2000/01/rdf-schema#label> "Nebraska"@en . 
+<http://id.loc.gov/vocabulary/countries/nbu> <http://www.loc.gov/mads/rdf/v1#code> "nbu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/inu> . 
+<http://id.loc.gov/vocabulary/countries/inu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/inu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/inu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/inu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Indiana"@en . 
+<http://id.loc.gov/vocabulary/countries/inu> <http://www.w3.org/2000/01/rdf-schema#label> "Indiana"@en . 
+<http://id.loc.gov/vocabulary/countries/inu> <http://www.loc.gov/mads/rdf/v1#code> "inu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/msu> . 
+<http://id.loc.gov/vocabulary/countries/msu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/msu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/msu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/msu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mississippi"@en . 
+<http://id.loc.gov/vocabulary/countries/msu> <http://www.w3.org/2000/01/rdf-schema#label> "Mississippi"@en . 
+<http://id.loc.gov/vocabulary/countries/msu> <http://www.loc.gov/mads/rdf/v1#code> "msu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/ncu> . 
+<http://id.loc.gov/vocabulary/countries/ncu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/ncu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/ncu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/ncu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "North Carolina"@en . 
+<http://id.loc.gov/vocabulary/countries/ncu> <http://www.w3.org/2000/01/rdf-schema#label> "North Carolina"@en . 
+<http://id.loc.gov/vocabulary/countries/ncu> <http://www.loc.gov/mads/rdf/v1#code> "ncu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/abc> . 
+<http://id.loc.gov/vocabulary/countries/abc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/abc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/abc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/abc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Alberta"@en . 
+<http://id.loc.gov/vocabulary/countries/abc> <http://www.w3.org/2000/01/rdf-schema#label> "Alberta"@en . 
+<http://id.loc.gov/vocabulary/countries/abc> <http://www.loc.gov/mads/rdf/v1#code> "abc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/pic> . 
+<http://id.loc.gov/vocabulary/countries/pic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/pic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/pic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/pic> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Prince Edward Island"@en . 
+<http://id.loc.gov/vocabulary/countries/pic> <http://www.w3.org/2000/01/rdf-schema#label> "Prince Edward Island"@en . 
+<http://id.loc.gov/vocabulary/countries/pic> <http://www.loc.gov/mads/rdf/v1#code> "pic"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/snc> . 
+<http://id.loc.gov/vocabulary/countries/snc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/snc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/snc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/snc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Saskatchewan"@en . 
+<http://id.loc.gov/vocabulary/countries/snc> <http://www.w3.org/2000/01/rdf-schema#label> "Saskatchewan"@en . 
+<http://id.loc.gov/vocabulary/countries/snc> <http://www.loc.gov/mads/rdf/v1#code> "snc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/flu> . 
+<http://id.loc.gov/vocabulary/countries/flu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/flu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/flu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/flu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Florida"@en . 
+<http://id.loc.gov/vocabulary/countries/flu> <http://www.w3.org/2000/01/rdf-schema#label> "Florida"@en . 
+<http://id.loc.gov/vocabulary/countries/flu> <http://www.loc.gov/mads/rdf/v1#code> "flu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/nhu> . 
+<http://id.loc.gov/vocabulary/countries/nhu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/nhu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/nhu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/nhu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "New Hampshire"@en . 
+<http://id.loc.gov/vocabulary/countries/nhu> <http://www.w3.org/2000/01/rdf-schema#label> "New Hampshire"@en . 
+<http://id.loc.gov/vocabulary/countries/nhu> <http://www.loc.gov/mads/rdf/v1#code> "nhu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/aku> . 
+<http://id.loc.gov/vocabulary/countries/aku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/aku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/aku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/aku> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Alaska"@en . 
+<http://id.loc.gov/vocabulary/countries/aku> <http://www.w3.org/2000/01/rdf-schema#label> "Alaska"@en . 
+<http://id.loc.gov/vocabulary/countries/aku> <http://www.loc.gov/mads/rdf/v1#code> "aku"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/idu> . 
+<http://id.loc.gov/vocabulary/countries/idu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/idu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/idu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/idu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Idaho"@en . 
+<http://id.loc.gov/vocabulary/countries/idu> <http://www.w3.org/2000/01/rdf-schema#label> "Idaho"@en . 
+<http://id.loc.gov/vocabulary/countries/idu> <http://www.loc.gov/mads/rdf/v1#code> "idu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/tnu> . 
+<http://id.loc.gov/vocabulary/countries/tnu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/tnu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/tnu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/tnu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Tennessee"@en . 
+<http://id.loc.gov/vocabulary/countries/tnu> <http://www.w3.org/2000/01/rdf-schema#label> "Tennessee"@en . 
+<http://id.loc.gov/vocabulary/countries/tnu> <http://www.loc.gov/mads/rdf/v1#code> "tnu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/hiu> . 
+<http://id.loc.gov/vocabulary/countries/hiu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/hiu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/hiu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/hiu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Hawaii"@en . 
+<http://id.loc.gov/vocabulary/countries/hiu> <http://www.w3.org/2000/01/rdf-schema#label> "Hawaii"@en . 
+<http://id.loc.gov/vocabulary/countries/hiu> <http://www.loc.gov/mads/rdf/v1#code> "hiu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/ctu> . 
+<http://id.loc.gov/vocabulary/countries/ctu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/ctu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/ctu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/ctu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Connecticut"@en . 
+<http://id.loc.gov/vocabulary/countries/ctu> <http://www.w3.org/2000/01/rdf-schema#label> "Connecticut"@en . 
+<http://id.loc.gov/vocabulary/countries/ctu> <http://www.loc.gov/mads/rdf/v1#code> "ctu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/vau> . 
+<http://id.loc.gov/vocabulary/countries/vau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/vau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/vau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/vau> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Virginia"@en . 
+<http://id.loc.gov/vocabulary/countries/vau> <http://www.w3.org/2000/01/rdf-schema#label> "Virginia"@en . 
+<http://id.loc.gov/vocabulary/countries/vau> <http://www.loc.gov/mads/rdf/v1#code> "vau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/dcu> . 
+<http://id.loc.gov/vocabulary/countries/dcu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/dcu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/dcu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/dcu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "District of Columbia"@en . 
+<http://id.loc.gov/vocabulary/countries/dcu> <http://www.w3.org/2000/01/rdf-schema#label> "District of Columbia"@en . 
+<http://id.loc.gov/vocabulary/countries/dcu> <http://www.loc.gov/mads/rdf/v1#code> "dcu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/mou> . 
+<http://id.loc.gov/vocabulary/countries/mou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/mou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/mou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/mou> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Missouri"@en . 
+<http://id.loc.gov/vocabulary/countries/mou> <http://www.w3.org/2000/01/rdf-schema#label> "Missouri"@en . 
+<http://id.loc.gov/vocabulary/countries/mou> <http://www.loc.gov/mads/rdf/v1#code> "mou"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/bcc> . 
+<http://id.loc.gov/vocabulary/countries/bcc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/bcc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/bcc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/bcc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "British Columbia"@en . 
+<http://id.loc.gov/vocabulary/countries/bcc> <http://www.w3.org/2000/01/rdf-schema#label> "British Columbia"@en . 
+<http://id.loc.gov/vocabulary/countries/bcc> <http://www.loc.gov/mads/rdf/v1#code> "bcc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/xxu> . 
+<http://id.loc.gov/vocabulary/countries/xxu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/xxu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/xxu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/xxu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "United States"@en . 
+<http://id.loc.gov/vocabulary/countries/xxu> <http://www.w3.org/2000/01/rdf-schema#label> "United States"@en . 
+<http://id.loc.gov/vocabulary/countries/xxu> <http://www.loc.gov/mads/rdf/v1#code> "xxu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/mau> . 
+<http://id.loc.gov/vocabulary/countries/mau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/mau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/mau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/mau> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Massachusetts"@en . 
+<http://id.loc.gov/vocabulary/countries/mau> <http://www.w3.org/2000/01/rdf-schema#label> "Massachusetts"@en . 
+<http://id.loc.gov/vocabulary/countries/mau> <http://www.loc.gov/mads/rdf/v1#code> "mau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/oku> . 
+<http://id.loc.gov/vocabulary/countries/oku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/oku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/oku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/oku> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Oklahoma"@en . 
+<http://id.loc.gov/vocabulary/countries/oku> <http://www.w3.org/2000/01/rdf-schema#label> "Oklahoma"@en . 
+<http://id.loc.gov/vocabulary/countries/oku> <http://www.loc.gov/mads/rdf/v1#code> "oku"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/quc> . 
+<http://id.loc.gov/vocabulary/countries/quc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/quc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/quc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/quc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Québec (Province)"@en . 
+<http://id.loc.gov/vocabulary/countries/quc> <http://www.w3.org/2000/01/rdf-schema#label> "Québec (Province)"@en . 
+<http://id.loc.gov/vocabulary/countries/quc> <http://www.loc.gov/mads/rdf/v1#code> "quc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/ykc> . 
+<http://id.loc.gov/vocabulary/countries/ykc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/ykc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/ykc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/ykc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Yukon Territory"@en . 
+<http://id.loc.gov/vocabulary/countries/ykc> <http://www.w3.org/2000/01/rdf-schema#label> "Yukon Territory"@en . 
+<http://id.loc.gov/vocabulary/countries/ykc> <http://www.loc.gov/mads/rdf/v1#code> "ykc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/mnu> . 
+<http://id.loc.gov/vocabulary/countries/mnu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/mnu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/mnu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/mnu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Minnesota"@en . 
+<http://id.loc.gov/vocabulary/countries/mnu> <http://www.w3.org/2000/01/rdf-schema#label> "Minnesota"@en . 
+<http://id.loc.gov/vocabulary/countries/mnu> <http://www.loc.gov/mads/rdf/v1#code> "mnu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/lau> . 
+<http://id.loc.gov/vocabulary/countries/lau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/lau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/lau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/lau> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Louisiana"@en . 
+<http://id.loc.gov/vocabulary/countries/lau> <http://www.w3.org/2000/01/rdf-schema#label> "Louisiana"@en . 
+<http://id.loc.gov/vocabulary/countries/lau> <http://www.loc.gov/mads/rdf/v1#code> "lau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/kyu> . 
+<http://id.loc.gov/vocabulary/countries/kyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/kyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/kyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/kyu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Kentucky"@en . 
+<http://id.loc.gov/vocabulary/countries/kyu> <http://www.w3.org/2000/01/rdf-schema#label> "Kentucky"@en . 
+<http://id.loc.gov/vocabulary/countries/kyu> <http://www.loc.gov/mads/rdf/v1#code> "kyu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/nsc> . 
+<http://id.loc.gov/vocabulary/countries/nsc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/nsc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/nsc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/nsc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Nova Scotia"@en . 
+<http://id.loc.gov/vocabulary/countries/nsc> <http://www.w3.org/2000/01/rdf-schema#label> "Nova Scotia"@en . 
+<http://id.loc.gov/vocabulary/countries/nsc> <http://www.loc.gov/mads/rdf/v1#code> "nsc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/ntc> . 
+<http://id.loc.gov/vocabulary/countries/ntc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/ntc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/ntc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/ntc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Northwest Territories"@en . 
+<http://id.loc.gov/vocabulary/countries/ntc> <http://www.w3.org/2000/01/rdf-schema#label> "Northwest Territories"@en . 
+<http://id.loc.gov/vocabulary/countries/ntc> <http://www.loc.gov/mads/rdf/v1#code> "ntc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/xxc> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Canada"@en . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/2000/01/rdf-schema#label> "Canada"@en . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.loc.gov/mads/rdf/v1#code> "xxc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/cau> . 
+<http://id.loc.gov/vocabulary/countries/cau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/cau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/cau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/cau> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "California"@en . 
+<http://id.loc.gov/vocabulary/countries/cau> <http://www.w3.org/2000/01/rdf-schema#label> "California"@en . 
+<http://id.loc.gov/vocabulary/countries/cau> <http://www.loc.gov/mads/rdf/v1#code> "cau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/nju> . 
+<http://id.loc.gov/vocabulary/countries/nju> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/nju> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/nju> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/nju> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "New Jersey"@en . 
+<http://id.loc.gov/vocabulary/countries/nju> <http://www.w3.org/2000/01/rdf-schema#label> "New Jersey"@en . 
+<http://id.loc.gov/vocabulary/countries/nju> <http://www.loc.gov/mads/rdf/v1#code> "nju"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/alu> . 
+<http://id.loc.gov/vocabulary/countries/alu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/alu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/alu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/alu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Alabama"@en . 
+<http://id.loc.gov/vocabulary/countries/alu> <http://www.w3.org/2000/01/rdf-schema#label> "Alabama"@en . 
+<http://id.loc.gov/vocabulary/countries/alu> <http://www.loc.gov/mads/rdf/v1#code> "alu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/mbc> . 
+<http://id.loc.gov/vocabulary/countries/mbc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/mbc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/mbc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/mbc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Manitoba"@en . 
+<http://id.loc.gov/vocabulary/countries/mbc> <http://www.w3.org/2000/01/rdf-schema#label> "Manitoba"@en . 
+<http://id.loc.gov/vocabulary/countries/mbc> <http://www.loc.gov/mads/rdf/v1#code> "mbc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/azu> . 
+<http://id.loc.gov/vocabulary/countries/azu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/azu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/azu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/azu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Arizona"@en . 
+<http://id.loc.gov/vocabulary/countries/azu> <http://www.w3.org/2000/01/rdf-schema#label> "Arizona"@en . 
+<http://id.loc.gov/vocabulary/countries/azu> <http://www.loc.gov/mads/rdf/v1#code> "azu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/nfc> . 
+<http://id.loc.gov/vocabulary/countries/nfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/nfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/nfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/nfc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Newfoundland and Labrador"@en . 
+<http://id.loc.gov/vocabulary/countries/nfc> <http://www.w3.org/2000/01/rdf-schema#label> "Newfoundland and Labrador"@en . 
+<http://id.loc.gov/vocabulary/countries/nfc> <http://www.loc.gov/mads/rdf/v1#code> "nfc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/mdu> . 
+<http://id.loc.gov/vocabulary/countries/mdu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/mdu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/mdu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/mdu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Maryland"@en . 
+<http://id.loc.gov/vocabulary/countries/mdu> <http://www.w3.org/2000/01/rdf-schema#label> "Maryland"@en . 
+<http://id.loc.gov/vocabulary/countries/mdu> <http://www.loc.gov/mads/rdf/v1#code> "mdu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/meu> . 
+<http://id.loc.gov/vocabulary/countries/meu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/meu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/meu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/meu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Maine"@en . 
+<http://id.loc.gov/vocabulary/countries/meu> <http://www.w3.org/2000/01/rdf-schema#label> "Maine"@en . 
+<http://id.loc.gov/vocabulary/countries/meu> <http://www.loc.gov/mads/rdf/v1#code> "meu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/wvu> . 
+<http://id.loc.gov/vocabulary/countries/wvu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/wvu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/wvu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/wvu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "West Virginia"@en . 
+<http://id.loc.gov/vocabulary/countries/wvu> <http://www.w3.org/2000/01/rdf-schema#label> "West Virginia"@en . 
+<http://id.loc.gov/vocabulary/countries/wvu> <http://www.loc.gov/mads/rdf/v1#code> "wvu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/wau> . 
+<http://id.loc.gov/vocabulary/countries/wau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/wau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/wau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/wau> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Washington (State)"@en . 
+<http://id.loc.gov/vocabulary/countries/wau> <http://www.w3.org/2000/01/rdf-schema#label> "Washington (State)"@en . 
+<http://id.loc.gov/vocabulary/countries/wau> <http://www.loc.gov/mads/rdf/v1#code> "wau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/deu> . 
+<http://id.loc.gov/vocabulary/countries/deu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/deu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/deu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/deu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Delaware"@en . 
+<http://id.loc.gov/vocabulary/countries/deu> <http://www.w3.org/2000/01/rdf-schema#label> "Delaware"@en . 
+<http://id.loc.gov/vocabulary/countries/deu> <http://www.loc.gov/mads/rdf/v1#code> "deu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/scu> . 
+<http://id.loc.gov/vocabulary/countries/scu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/scu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/scu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/scu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "South Carolina"@en . 
+<http://id.loc.gov/vocabulary/countries/scu> <http://www.w3.org/2000/01/rdf-schema#label> "South Carolina"@en . 
+<http://id.loc.gov/vocabulary/countries/scu> <http://www.loc.gov/mads/rdf/v1#code> "scu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/nkc> . 
+<http://id.loc.gov/vocabulary/countries/nkc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/nkc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/nkc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/nkc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "New Brunswick"@en . 
+<http://id.loc.gov/vocabulary/countries/nkc> <http://www.w3.org/2000/01/rdf-schema#label> "New Brunswick"@en . 
+<http://id.loc.gov/vocabulary/countries/nkc> <http://www.loc.gov/mads/rdf/v1#code> "nkc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/wiu> . 
+<http://id.loc.gov/vocabulary/countries/wiu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/wiu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/wiu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/wiu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Wisconsin"@en . 
+<http://id.loc.gov/vocabulary/countries/wiu> <http://www.w3.org/2000/01/rdf-schema#label> "Wisconsin"@en . 
+<http://id.loc.gov/vocabulary/countries/wiu> <http://www.loc.gov/mads/rdf/v1#code> "wiu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/nvu> . 
+<http://id.loc.gov/vocabulary/countries/nvu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/nvu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/nvu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/nvu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Nevada"@en . 
+<http://id.loc.gov/vocabulary/countries/nvu> <http://www.w3.org/2000/01/rdf-schema#label> "Nevada"@en . 
+<http://id.loc.gov/vocabulary/countries/nvu> <http://www.loc.gov/mads/rdf/v1#code> "nvu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/ilu> . 
+<http://id.loc.gov/vocabulary/countries/ilu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/ilu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/ilu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/ilu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Illinois"@en . 
+<http://id.loc.gov/vocabulary/countries/ilu> <http://www.w3.org/2000/01/rdf-schema#label> "Illinois"@en . 
+<http://id.loc.gov/vocabulary/countries/ilu> <http://www.loc.gov/mads/rdf/v1#code> "ilu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/oru> . 
+<http://id.loc.gov/vocabulary/countries/oru> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/oru> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/oru> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/oru> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Oregon"@en . 
+<http://id.loc.gov/vocabulary/countries/oru> <http://www.w3.org/2000/01/rdf-schema#label> "Oregon"@en . 
+<http://id.loc.gov/vocabulary/countries/oru> <http://www.loc.gov/mads/rdf/v1#code> "oru"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#hasNarrowerExternalAuthority> <http://id.loc.gov/vocabulary/countries/utu> . 
+<http://id.loc.gov/vocabulary/countries/utu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/utu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/utu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/utu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Utah"@en . 
+<http://id.loc.gov/vocabulary/countries/utu> <http://www.w3.org/2000/01/rdf-schema#label> "Utah"@en . 
+<http://id.loc.gov/vocabulary/countries/utu> <http://www.loc.gov/mads/rdf/v1#code> "utu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2002/07/owl#sameAs> <info:lc/vocabulary/gacs/n> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#code> "n"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/vocabulary/geographicAreas> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#isTopMemberOfMADSScheme> <http://id.loc.gov/vocabulary/geographicAreas> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:bnode1011vocabularygeographicAreasn . 
+_:bnode1011vocabularygeographicAreasn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> . 
+_:bnode1011vocabularygeographicAreasn <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "new"^^<http://www.w3.org/2001/XMLSchema#string> . 
+_:bnode1011vocabularygeographicAreasn <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "1970-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> . 
+_:bnode1011vocabularygeographicAreasn <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/dlcmrc> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#prefLabel> "North America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-ust> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-ust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-ust> <http://www.w3.org/2004/02/skos/core#prefLabel> "Southwest, New"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-ust> <http://www.w3.org/2000/01/rdf-schema#label> "Southwest, New"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-ust> <http://www.w3.org/2004/02/skos/core#notation> "n-ust"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-mx> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-mx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-mx> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mexico"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-mx> <http://www.w3.org/2000/01/rdf-schema#label> "Mexico"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-mx> <http://www.w3.org/2004/02/skos/core#notation> "n-mx"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-usl> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Middle Atlantic States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usl> <http://www.w3.org/2000/01/rdf-schema#label> "Middle Atlantic States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usl> <http://www.w3.org/2004/02/skos/core#notation> "n-usl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/np> . 
+<http://id.loc.gov/vocabulary/geographicAreas/np> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/np> <http://www.w3.org/2004/02/skos/core#prefLabel> "Great Plains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/np> <http://www.w3.org/2000/01/rdf-schema#label> "Great Plains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/np> <http://www.w3.org/2004/02/skos/core#notation> "np"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-usm> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usm> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mississippi River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usm> <http://www.w3.org/2000/01/rdf-schema#label> "Mississippi River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usm> <http://www.w3.org/2004/02/skos/core#notation> "n-usm"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-usn> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usn> <http://www.w3.org/2004/02/skos/core#prefLabel> "New England"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usn> <http://www.w3.org/2000/01/rdf-schema#label> "New England"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usn> <http://www.w3.org/2004/02/skos/core#notation> "n-usn"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-us> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-us> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-us> <http://www.w3.org/2000/01/rdf-schema#label> "United States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-us> <http://www.w3.org/2004/02/skos/core#notation> "n-us"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-uso> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uso> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ohio River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uso> <http://www.w3.org/2000/01/rdf-schema#label> "Ohio River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uso> <http://www.w3.org/2004/02/skos/core#notation> "n-uso"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cnp> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnp> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prairie Provinces"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnp> <http://www.w3.org/2000/01/rdf-schema#label> "Prairie Provinces"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnp> <http://www.w3.org/2004/02/skos/core#notation> "n-cnp"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/nw> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nw> <http://www.w3.org/2004/02/skos/core#prefLabel> "West Indies"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nw> <http://www.w3.org/2000/01/rdf-schema#label> "West Indies"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nw> <http://www.w3.org/2004/02/skos/core#notation> "nw"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-usp> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usp> <http://www.w3.org/2004/02/skos/core#prefLabel> "West (U.S.)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usp> <http://www.w3.org/2000/01/rdf-schema#label> "West (U.S.)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usp> <http://www.w3.org/2004/02/skos/core#notation> "n-usp"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-use> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-use> <http://www.w3.org/2004/02/skos/core#prefLabel> "Northeastern States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-use> <http://www.w3.org/2000/01/rdf-schema#label> "Northeastern States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-use> <http://www.w3.org/2004/02/skos/core#notation> "n-use"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-gl> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-gl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Greenland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-gl> <http://www.w3.org/2000/01/rdf-schema#label> "Greenland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-gl> <http://www.w3.org/2004/02/skos/core#notation> "n-gl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-usr> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usr> <http://www.w3.org/2004/02/skos/core#prefLabel> "East (U.S.)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usr> <http://www.w3.org/2000/01/rdf-schema#label> "East (U.S.)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usr> <http://www.w3.org/2004/02/skos/core#notation> "n-usr"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cnh> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnh> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hudson Bay"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnh> <http://www.w3.org/2000/01/rdf-schema#label> "Hudson Bay"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnh> <http://www.w3.org/2004/02/skos/core#notation> "n-cnh"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#prefLabel> "Canada"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2000/01/rdf-schema#label> "Canada"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#notation> "n-cn"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-uss> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uss> <http://www.w3.org/2004/02/skos/core#prefLabel> "Missouri River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uss> <http://www.w3.org/2000/01/rdf-schema#label> "Missouri River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-uss> <http://www.w3.org/2004/02/skos/core#notation> "n-uss"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-usa> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Appalachian Mountains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usa> <http://www.w3.org/2000/01/rdf-schema#label> "Appalachian Mountains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usa> <http://www.w3.org/2004/02/skos/core#notation> "n-usa"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/nl> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Great Lakes (North America) | Lake States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nl> <http://www.w3.org/2000/01/rdf-schema#label> "Great Lakes (North America) | Lake States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nl> <http://www.w3.org/2004/02/skos/core#notation> "nl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/nm> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nm> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mexico, Gulf of"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nm> <http://www.w3.org/2000/01/rdf-schema#label> "Mexico, Gulf of"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nm> <http://www.w3.org/2004/02/skos/core#notation> "nm"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-usc> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Middle West"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usc> <http://www.w3.org/2000/01/rdf-schema#label> "Middle West"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usc> <http://www.w3.org/2004/02/skos/core#notation> "n-usc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/nc> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Central America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nc> <http://www.w3.org/2000/01/rdf-schema#label> "Central America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nc> <http://www.w3.org/2004/02/skos/core#notation> "nc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cnm> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnm> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maritime Provinces"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnm> <http://www.w3.org/2000/01/rdf-schema#label> "Maritime Provinces"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cnm> <http://www.w3.org/2004/02/skos/core#notation> "n-cnm"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-xl> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-xl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-xl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Saint Pierre and Miquelon"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-xl> <http://www.w3.org/2000/01/rdf-schema#label> "Saint Pierre and Miquelon"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-xl> <http://www.w3.org/2004/02/skos/core#notation> "n-xl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-usu> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Southern States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usu> <http://www.w3.org/2000/01/rdf-schema#label> "Southern States"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-usu> <http://www.w3.org/2004/02/skos/core#notation> "n-usu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/nr> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/nr> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rocky Mountains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nr> <http://www.w3.org/2000/01/rdf-schema#label> "Rocky Mountains"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/nr> <http://www.w3.org/2004/02/skos/core#notation> "nr"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/gau> . 
+<http://id.loc.gov/vocabulary/countries/gau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/gau> <http://www.w3.org/2004/02/skos/core#prefLabel> "Georgia"@en . 
+<http://id.loc.gov/vocabulary/countries/gau> <http://www.w3.org/2000/01/rdf-schema#label> "Georgia"@en . 
+<http://id.loc.gov/vocabulary/countries/gau> <http://www.w3.org/2004/02/skos/core#notation> "gau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/nmu> . 
+<http://id.loc.gov/vocabulary/countries/nmu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/nmu> <http://www.w3.org/2004/02/skos/core#prefLabel> "New Mexico"@en . 
+<http://id.loc.gov/vocabulary/countries/nmu> <http://www.w3.org/2000/01/rdf-schema#label> "New Mexico"@en . 
+<http://id.loc.gov/vocabulary/countries/nmu> <http://www.w3.org/2004/02/skos/core#notation> "nmu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/miu> . 
+<http://id.loc.gov/vocabulary/countries/miu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/miu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Michigan"@en . 
+<http://id.loc.gov/vocabulary/countries/miu> <http://www.w3.org/2000/01/rdf-schema#label> "Michigan"@en . 
+<http://id.loc.gov/vocabulary/countries/miu> <http://www.w3.org/2004/02/skos/core#notation> "miu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/pau> . 
+<http://id.loc.gov/vocabulary/countries/pau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/pau> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pennsylvania"@en . 
+<http://id.loc.gov/vocabulary/countries/pau> <http://www.w3.org/2000/01/rdf-schema#label> "Pennsylvania"@en . 
+<http://id.loc.gov/vocabulary/countries/pau> <http://www.w3.org/2004/02/skos/core#notation> "pau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/onc> . 
+<http://id.loc.gov/vocabulary/countries/onc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/onc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ontario"@en . 
+<http://id.loc.gov/vocabulary/countries/onc> <http://www.w3.org/2000/01/rdf-schema#label> "Ontario"@en . 
+<http://id.loc.gov/vocabulary/countries/onc> <http://www.w3.org/2004/02/skos/core#notation> "onc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/nyu> . 
+<http://id.loc.gov/vocabulary/countries/nyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/nyu> <http://www.w3.org/2004/02/skos/core#prefLabel> "New York (State)"@en . 
+<http://id.loc.gov/vocabulary/countries/nyu> <http://www.w3.org/2000/01/rdf-schema#label> "New York (State)"@en . 
+<http://id.loc.gov/vocabulary/countries/nyu> <http://www.w3.org/2004/02/skos/core#notation> "nyu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/nuc> . 
+<http://id.loc.gov/vocabulary/countries/nuc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/nuc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nunavut"@en . 
+<http://id.loc.gov/vocabulary/countries/nuc> <http://www.w3.org/2000/01/rdf-schema#label> "Nunavut"@en . 
+<http://id.loc.gov/vocabulary/countries/nuc> <http://www.w3.org/2004/02/skos/core#notation> "nuc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/ksu> . 
+<http://id.loc.gov/vocabulary/countries/ksu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/ksu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kansas"@en . 
+<http://id.loc.gov/vocabulary/countries/ksu> <http://www.w3.org/2000/01/rdf-schema#label> "Kansas"@en . 
+<http://id.loc.gov/vocabulary/countries/ksu> <http://www.w3.org/2004/02/skos/core#notation> "ksu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/ndu> . 
+<http://id.loc.gov/vocabulary/countries/ndu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/ndu> <http://www.w3.org/2004/02/skos/core#prefLabel> "North Dakota"@en . 
+<http://id.loc.gov/vocabulary/countries/ndu> <http://www.w3.org/2000/01/rdf-schema#label> "North Dakota"@en . 
+<http://id.loc.gov/vocabulary/countries/ndu> <http://www.w3.org/2004/02/skos/core#notation> "ndu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/gl> . 
+<http://id.loc.gov/vocabulary/countries/gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/gl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Greenland"@en . 
+<http://id.loc.gov/vocabulary/countries/gl> <http://www.w3.org/2000/01/rdf-schema#label> "Greenland"@en . 
+<http://id.loc.gov/vocabulary/countries/gl> <http://www.w3.org/2004/02/skos/core#notation> "gl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/txu> . 
+<http://id.loc.gov/vocabulary/countries/txu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/txu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Texas"@en . 
+<http://id.loc.gov/vocabulary/countries/txu> <http://www.w3.org/2000/01/rdf-schema#label> "Texas"@en . 
+<http://id.loc.gov/vocabulary/countries/txu> <http://www.w3.org/2004/02/skos/core#notation> "txu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/iau> . 
+<http://id.loc.gov/vocabulary/countries/iau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/iau> <http://www.w3.org/2004/02/skos/core#prefLabel> "Iowa"@en . 
+<http://id.loc.gov/vocabulary/countries/iau> <http://www.w3.org/2000/01/rdf-schema#label> "Iowa"@en . 
+<http://id.loc.gov/vocabulary/countries/iau> <http://www.w3.org/2004/02/skos/core#notation> "iau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/wyu> . 
+<http://id.loc.gov/vocabulary/countries/wyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/wyu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wyoming"@en . 
+<http://id.loc.gov/vocabulary/countries/wyu> <http://www.w3.org/2000/01/rdf-schema#label> "Wyoming"@en . 
+<http://id.loc.gov/vocabulary/countries/wyu> <http://www.w3.org/2004/02/skos/core#notation> "wyu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/ohu> . 
+<http://id.loc.gov/vocabulary/countries/ohu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/ohu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ohio"@en . 
+<http://id.loc.gov/vocabulary/countries/ohu> <http://www.w3.org/2000/01/rdf-schema#label> "Ohio"@en . 
+<http://id.loc.gov/vocabulary/countries/ohu> <http://www.w3.org/2004/02/skos/core#notation> "ohu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/sdu> . 
+<http://id.loc.gov/vocabulary/countries/sdu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/sdu> <http://www.w3.org/2004/02/skos/core#prefLabel> "South Dakota"@en . 
+<http://id.loc.gov/vocabulary/countries/sdu> <http://www.w3.org/2000/01/rdf-schema#label> "South Dakota"@en . 
+<http://id.loc.gov/vocabulary/countries/sdu> <http://www.w3.org/2004/02/skos/core#notation> "sdu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/vtu> . 
+<http://id.loc.gov/vocabulary/countries/vtu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/vtu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vermont"@en . 
+<http://id.loc.gov/vocabulary/countries/vtu> <http://www.w3.org/2000/01/rdf-schema#label> "Vermont"@en . 
+<http://id.loc.gov/vocabulary/countries/vtu> <http://www.w3.org/2004/02/skos/core#notation> "vtu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/cou> . 
+<http://id.loc.gov/vocabulary/countries/cou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/cou> <http://www.w3.org/2004/02/skos/core#prefLabel> "Colorado"@en . 
+<http://id.loc.gov/vocabulary/countries/cou> <http://www.w3.org/2000/01/rdf-schema#label> "Colorado"@en . 
+<http://id.loc.gov/vocabulary/countries/cou> <http://www.w3.org/2004/02/skos/core#notation> "cou"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/xl> . 
+<http://id.loc.gov/vocabulary/countries/xl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/xl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Saint Pierre and Miquelon"@en . 
+<http://id.loc.gov/vocabulary/countries/xl> <http://www.w3.org/2000/01/rdf-schema#label> "Saint Pierre and Miquelon"@en . 
+<http://id.loc.gov/vocabulary/countries/xl> <http://www.w3.org/2004/02/skos/core#notation> "xl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/riu> . 
+<http://id.loc.gov/vocabulary/countries/riu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/riu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rhode Island"@en . 
+<http://id.loc.gov/vocabulary/countries/riu> <http://www.w3.org/2000/01/rdf-schema#label> "Rhode Island"@en . 
+<http://id.loc.gov/vocabulary/countries/riu> <http://www.w3.org/2004/02/skos/core#notation> "riu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/mx> . 
+<http://id.loc.gov/vocabulary/countries/mx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/mx> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mexico"@en . 
+<http://id.loc.gov/vocabulary/countries/mx> <http://www.w3.org/2000/01/rdf-schema#label> "Mexico"@en . 
+<http://id.loc.gov/vocabulary/countries/mx> <http://www.w3.org/2004/02/skos/core#notation> "mx"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/mtu> . 
+<http://id.loc.gov/vocabulary/countries/mtu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/mtu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Montana"@en . 
+<http://id.loc.gov/vocabulary/countries/mtu> <http://www.w3.org/2000/01/rdf-schema#label> "Montana"@en . 
+<http://id.loc.gov/vocabulary/countries/mtu> <http://www.w3.org/2004/02/skos/core#notation> "mtu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/aru> . 
+<http://id.loc.gov/vocabulary/countries/aru> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/aru> <http://www.w3.org/2004/02/skos/core#prefLabel> "Arkansas"@en . 
+<http://id.loc.gov/vocabulary/countries/aru> <http://www.w3.org/2000/01/rdf-schema#label> "Arkansas"@en . 
+<http://id.loc.gov/vocabulary/countries/aru> <http://www.w3.org/2004/02/skos/core#notation> "aru"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/nbu> . 
+<http://id.loc.gov/vocabulary/countries/nbu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/nbu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nebraska"@en . 
+<http://id.loc.gov/vocabulary/countries/nbu> <http://www.w3.org/2000/01/rdf-schema#label> "Nebraska"@en . 
+<http://id.loc.gov/vocabulary/countries/nbu> <http://www.w3.org/2004/02/skos/core#notation> "nbu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/inu> . 
+<http://id.loc.gov/vocabulary/countries/inu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/inu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Indiana"@en . 
+<http://id.loc.gov/vocabulary/countries/inu> <http://www.w3.org/2000/01/rdf-schema#label> "Indiana"@en . 
+<http://id.loc.gov/vocabulary/countries/inu> <http://www.w3.org/2004/02/skos/core#notation> "inu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/msu> . 
+<http://id.loc.gov/vocabulary/countries/msu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/msu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mississippi"@en . 
+<http://id.loc.gov/vocabulary/countries/msu> <http://www.w3.org/2000/01/rdf-schema#label> "Mississippi"@en . 
+<http://id.loc.gov/vocabulary/countries/msu> <http://www.w3.org/2004/02/skos/core#notation> "msu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/ncu> . 
+<http://id.loc.gov/vocabulary/countries/ncu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/ncu> <http://www.w3.org/2004/02/skos/core#prefLabel> "North Carolina"@en . 
+<http://id.loc.gov/vocabulary/countries/ncu> <http://www.w3.org/2000/01/rdf-schema#label> "North Carolina"@en . 
+<http://id.loc.gov/vocabulary/countries/ncu> <http://www.w3.org/2004/02/skos/core#notation> "ncu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/abc> . 
+<http://id.loc.gov/vocabulary/countries/abc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/abc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Alberta"@en . 
+<http://id.loc.gov/vocabulary/countries/abc> <http://www.w3.org/2000/01/rdf-schema#label> "Alberta"@en . 
+<http://id.loc.gov/vocabulary/countries/abc> <http://www.w3.org/2004/02/skos/core#notation> "abc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/pic> . 
+<http://id.loc.gov/vocabulary/countries/pic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/pic> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prince Edward Island"@en . 
+<http://id.loc.gov/vocabulary/countries/pic> <http://www.w3.org/2000/01/rdf-schema#label> "Prince Edward Island"@en . 
+<http://id.loc.gov/vocabulary/countries/pic> <http://www.w3.org/2004/02/skos/core#notation> "pic"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/snc> . 
+<http://id.loc.gov/vocabulary/countries/snc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/snc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Saskatchewan"@en . 
+<http://id.loc.gov/vocabulary/countries/snc> <http://www.w3.org/2000/01/rdf-schema#label> "Saskatchewan"@en . 
+<http://id.loc.gov/vocabulary/countries/snc> <http://www.w3.org/2004/02/skos/core#notation> "snc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/flu> . 
+<http://id.loc.gov/vocabulary/countries/flu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/flu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Florida"@en . 
+<http://id.loc.gov/vocabulary/countries/flu> <http://www.w3.org/2000/01/rdf-schema#label> "Florida"@en . 
+<http://id.loc.gov/vocabulary/countries/flu> <http://www.w3.org/2004/02/skos/core#notation> "flu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/nhu> . 
+<http://id.loc.gov/vocabulary/countries/nhu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/nhu> <http://www.w3.org/2004/02/skos/core#prefLabel> "New Hampshire"@en . 
+<http://id.loc.gov/vocabulary/countries/nhu> <http://www.w3.org/2000/01/rdf-schema#label> "New Hampshire"@en . 
+<http://id.loc.gov/vocabulary/countries/nhu> <http://www.w3.org/2004/02/skos/core#notation> "nhu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/aku> . 
+<http://id.loc.gov/vocabulary/countries/aku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/aku> <http://www.w3.org/2004/02/skos/core#prefLabel> "Alaska"@en . 
+<http://id.loc.gov/vocabulary/countries/aku> <http://www.w3.org/2000/01/rdf-schema#label> "Alaska"@en . 
+<http://id.loc.gov/vocabulary/countries/aku> <http://www.w3.org/2004/02/skos/core#notation> "aku"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/idu> . 
+<http://id.loc.gov/vocabulary/countries/idu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/idu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Idaho"@en . 
+<http://id.loc.gov/vocabulary/countries/idu> <http://www.w3.org/2000/01/rdf-schema#label> "Idaho"@en . 
+<http://id.loc.gov/vocabulary/countries/idu> <http://www.w3.org/2004/02/skos/core#notation> "idu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/tnu> . 
+<http://id.loc.gov/vocabulary/countries/tnu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/tnu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tennessee"@en . 
+<http://id.loc.gov/vocabulary/countries/tnu> <http://www.w3.org/2000/01/rdf-schema#label> "Tennessee"@en . 
+<http://id.loc.gov/vocabulary/countries/tnu> <http://www.w3.org/2004/02/skos/core#notation> "tnu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/hiu> . 
+<http://id.loc.gov/vocabulary/countries/hiu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/hiu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hawaii"@en . 
+<http://id.loc.gov/vocabulary/countries/hiu> <http://www.w3.org/2000/01/rdf-schema#label> "Hawaii"@en . 
+<http://id.loc.gov/vocabulary/countries/hiu> <http://www.w3.org/2004/02/skos/core#notation> "hiu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/ctu> . 
+<http://id.loc.gov/vocabulary/countries/ctu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/ctu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Connecticut"@en . 
+<http://id.loc.gov/vocabulary/countries/ctu> <http://www.w3.org/2000/01/rdf-schema#label> "Connecticut"@en . 
+<http://id.loc.gov/vocabulary/countries/ctu> <http://www.w3.org/2004/02/skos/core#notation> "ctu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/vau> . 
+<http://id.loc.gov/vocabulary/countries/vau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/vau> <http://www.w3.org/2004/02/skos/core#prefLabel> "Virginia"@en . 
+<http://id.loc.gov/vocabulary/countries/vau> <http://www.w3.org/2000/01/rdf-schema#label> "Virginia"@en . 
+<http://id.loc.gov/vocabulary/countries/vau> <http://www.w3.org/2004/02/skos/core#notation> "vau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/dcu> . 
+<http://id.loc.gov/vocabulary/countries/dcu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/dcu> <http://www.w3.org/2004/02/skos/core#prefLabel> "District of Columbia"@en . 
+<http://id.loc.gov/vocabulary/countries/dcu> <http://www.w3.org/2000/01/rdf-schema#label> "District of Columbia"@en . 
+<http://id.loc.gov/vocabulary/countries/dcu> <http://www.w3.org/2004/02/skos/core#notation> "dcu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/mou> . 
+<http://id.loc.gov/vocabulary/countries/mou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/mou> <http://www.w3.org/2004/02/skos/core#prefLabel> "Missouri"@en . 
+<http://id.loc.gov/vocabulary/countries/mou> <http://www.w3.org/2000/01/rdf-schema#label> "Missouri"@en . 
+<http://id.loc.gov/vocabulary/countries/mou> <http://www.w3.org/2004/02/skos/core#notation> "mou"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/bcc> . 
+<http://id.loc.gov/vocabulary/countries/bcc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/bcc> <http://www.w3.org/2004/02/skos/core#prefLabel> "British Columbia"@en . 
+<http://id.loc.gov/vocabulary/countries/bcc> <http://www.w3.org/2000/01/rdf-schema#label> "British Columbia"@en . 
+<http://id.loc.gov/vocabulary/countries/bcc> <http://www.w3.org/2004/02/skos/core#notation> "bcc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/xxu> . 
+<http://id.loc.gov/vocabulary/countries/xxu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/xxu> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States"@en . 
+<http://id.loc.gov/vocabulary/countries/xxu> <http://www.w3.org/2000/01/rdf-schema#label> "United States"@en . 
+<http://id.loc.gov/vocabulary/countries/xxu> <http://www.w3.org/2004/02/skos/core#notation> "xxu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/mau> . 
+<http://id.loc.gov/vocabulary/countries/mau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/mau> <http://www.w3.org/2004/02/skos/core#prefLabel> "Massachusetts"@en . 
+<http://id.loc.gov/vocabulary/countries/mau> <http://www.w3.org/2000/01/rdf-schema#label> "Massachusetts"@en . 
+<http://id.loc.gov/vocabulary/countries/mau> <http://www.w3.org/2004/02/skos/core#notation> "mau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/oku> . 
+<http://id.loc.gov/vocabulary/countries/oku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/oku> <http://www.w3.org/2004/02/skos/core#prefLabel> "Oklahoma"@en . 
+<http://id.loc.gov/vocabulary/countries/oku> <http://www.w3.org/2000/01/rdf-schema#label> "Oklahoma"@en . 
+<http://id.loc.gov/vocabulary/countries/oku> <http://www.w3.org/2004/02/skos/core#notation> "oku"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/quc> . 
+<http://id.loc.gov/vocabulary/countries/quc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/quc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Québec (Province)"@en . 
+<http://id.loc.gov/vocabulary/countries/quc> <http://www.w3.org/2000/01/rdf-schema#label> "Québec (Province)"@en . 
+<http://id.loc.gov/vocabulary/countries/quc> <http://www.w3.org/2004/02/skos/core#notation> "quc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/ykc> . 
+<http://id.loc.gov/vocabulary/countries/ykc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/ykc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Yukon Territory"@en . 
+<http://id.loc.gov/vocabulary/countries/ykc> <http://www.w3.org/2000/01/rdf-schema#label> "Yukon Territory"@en . 
+<http://id.loc.gov/vocabulary/countries/ykc> <http://www.w3.org/2004/02/skos/core#notation> "ykc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/mnu> . 
+<http://id.loc.gov/vocabulary/countries/mnu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/mnu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Minnesota"@en . 
+<http://id.loc.gov/vocabulary/countries/mnu> <http://www.w3.org/2000/01/rdf-schema#label> "Minnesota"@en . 
+<http://id.loc.gov/vocabulary/countries/mnu> <http://www.w3.org/2004/02/skos/core#notation> "mnu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/lau> . 
+<http://id.loc.gov/vocabulary/countries/lau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/lau> <http://www.w3.org/2004/02/skos/core#prefLabel> "Louisiana"@en . 
+<http://id.loc.gov/vocabulary/countries/lau> <http://www.w3.org/2000/01/rdf-schema#label> "Louisiana"@en . 
+<http://id.loc.gov/vocabulary/countries/lau> <http://www.w3.org/2004/02/skos/core#notation> "lau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/kyu> . 
+<http://id.loc.gov/vocabulary/countries/kyu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/kyu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kentucky"@en . 
+<http://id.loc.gov/vocabulary/countries/kyu> <http://www.w3.org/2000/01/rdf-schema#label> "Kentucky"@en . 
+<http://id.loc.gov/vocabulary/countries/kyu> <http://www.w3.org/2004/02/skos/core#notation> "kyu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/nsc> . 
+<http://id.loc.gov/vocabulary/countries/nsc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/nsc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nova Scotia"@en . 
+<http://id.loc.gov/vocabulary/countries/nsc> <http://www.w3.org/2000/01/rdf-schema#label> "Nova Scotia"@en . 
+<http://id.loc.gov/vocabulary/countries/nsc> <http://www.w3.org/2004/02/skos/core#notation> "nsc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/ntc> . 
+<http://id.loc.gov/vocabulary/countries/ntc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/ntc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Northwest Territories"@en . 
+<http://id.loc.gov/vocabulary/countries/ntc> <http://www.w3.org/2000/01/rdf-schema#label> "Northwest Territories"@en . 
+<http://id.loc.gov/vocabulary/countries/ntc> <http://www.w3.org/2004/02/skos/core#notation> "ntc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/xxc> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Canada"@en . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/2000/01/rdf-schema#label> "Canada"@en . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/2004/02/skos/core#notation> "xxc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/cau> . 
+<http://id.loc.gov/vocabulary/countries/cau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/cau> <http://www.w3.org/2004/02/skos/core#prefLabel> "California"@en . 
+<http://id.loc.gov/vocabulary/countries/cau> <http://www.w3.org/2000/01/rdf-schema#label> "California"@en . 
+<http://id.loc.gov/vocabulary/countries/cau> <http://www.w3.org/2004/02/skos/core#notation> "cau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/nju> . 
+<http://id.loc.gov/vocabulary/countries/nju> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/nju> <http://www.w3.org/2004/02/skos/core#prefLabel> "New Jersey"@en . 
+<http://id.loc.gov/vocabulary/countries/nju> <http://www.w3.org/2000/01/rdf-schema#label> "New Jersey"@en . 
+<http://id.loc.gov/vocabulary/countries/nju> <http://www.w3.org/2004/02/skos/core#notation> "nju"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/alu> . 
+<http://id.loc.gov/vocabulary/countries/alu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/alu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Alabama"@en . 
+<http://id.loc.gov/vocabulary/countries/alu> <http://www.w3.org/2000/01/rdf-schema#label> "Alabama"@en . 
+<http://id.loc.gov/vocabulary/countries/alu> <http://www.w3.org/2004/02/skos/core#notation> "alu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/mbc> . 
+<http://id.loc.gov/vocabulary/countries/mbc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/mbc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Manitoba"@en . 
+<http://id.loc.gov/vocabulary/countries/mbc> <http://www.w3.org/2000/01/rdf-schema#label> "Manitoba"@en . 
+<http://id.loc.gov/vocabulary/countries/mbc> <http://www.w3.org/2004/02/skos/core#notation> "mbc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/azu> . 
+<http://id.loc.gov/vocabulary/countries/azu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/azu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Arizona"@en . 
+<http://id.loc.gov/vocabulary/countries/azu> <http://www.w3.org/2000/01/rdf-schema#label> "Arizona"@en . 
+<http://id.loc.gov/vocabulary/countries/azu> <http://www.w3.org/2004/02/skos/core#notation> "azu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/nfc> . 
+<http://id.loc.gov/vocabulary/countries/nfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/nfc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Newfoundland and Labrador"@en . 
+<http://id.loc.gov/vocabulary/countries/nfc> <http://www.w3.org/2000/01/rdf-schema#label> "Newfoundland and Labrador"@en . 
+<http://id.loc.gov/vocabulary/countries/nfc> <http://www.w3.org/2004/02/skos/core#notation> "nfc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/mdu> . 
+<http://id.loc.gov/vocabulary/countries/mdu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/mdu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maryland"@en . 
+<http://id.loc.gov/vocabulary/countries/mdu> <http://www.w3.org/2000/01/rdf-schema#label> "Maryland"@en . 
+<http://id.loc.gov/vocabulary/countries/mdu> <http://www.w3.org/2004/02/skos/core#notation> "mdu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/meu> . 
+<http://id.loc.gov/vocabulary/countries/meu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/meu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maine"@en . 
+<http://id.loc.gov/vocabulary/countries/meu> <http://www.w3.org/2000/01/rdf-schema#label> "Maine"@en . 
+<http://id.loc.gov/vocabulary/countries/meu> <http://www.w3.org/2004/02/skos/core#notation> "meu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/wvu> . 
+<http://id.loc.gov/vocabulary/countries/wvu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/wvu> <http://www.w3.org/2004/02/skos/core#prefLabel> "West Virginia"@en . 
+<http://id.loc.gov/vocabulary/countries/wvu> <http://www.w3.org/2000/01/rdf-schema#label> "West Virginia"@en . 
+<http://id.loc.gov/vocabulary/countries/wvu> <http://www.w3.org/2004/02/skos/core#notation> "wvu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/wau> . 
+<http://id.loc.gov/vocabulary/countries/wau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/wau> <http://www.w3.org/2004/02/skos/core#prefLabel> "Washington (State)"@en . 
+<http://id.loc.gov/vocabulary/countries/wau> <http://www.w3.org/2000/01/rdf-schema#label> "Washington (State)"@en . 
+<http://id.loc.gov/vocabulary/countries/wau> <http://www.w3.org/2004/02/skos/core#notation> "wau"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/deu> . 
+<http://id.loc.gov/vocabulary/countries/deu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/deu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Delaware"@en . 
+<http://id.loc.gov/vocabulary/countries/deu> <http://www.w3.org/2000/01/rdf-schema#label> "Delaware"@en . 
+<http://id.loc.gov/vocabulary/countries/deu> <http://www.w3.org/2004/02/skos/core#notation> "deu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/scu> . 
+<http://id.loc.gov/vocabulary/countries/scu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/scu> <http://www.w3.org/2004/02/skos/core#prefLabel> "South Carolina"@en . 
+<http://id.loc.gov/vocabulary/countries/scu> <http://www.w3.org/2000/01/rdf-schema#label> "South Carolina"@en . 
+<http://id.loc.gov/vocabulary/countries/scu> <http://www.w3.org/2004/02/skos/core#notation> "scu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/nkc> . 
+<http://id.loc.gov/vocabulary/countries/nkc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/nkc> <http://www.w3.org/2004/02/skos/core#prefLabel> "New Brunswick"@en . 
+<http://id.loc.gov/vocabulary/countries/nkc> <http://www.w3.org/2000/01/rdf-schema#label> "New Brunswick"@en . 
+<http://id.loc.gov/vocabulary/countries/nkc> <http://www.w3.org/2004/02/skos/core#notation> "nkc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/wiu> . 
+<http://id.loc.gov/vocabulary/countries/wiu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/wiu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wisconsin"@en . 
+<http://id.loc.gov/vocabulary/countries/wiu> <http://www.w3.org/2000/01/rdf-schema#label> "Wisconsin"@en . 
+<http://id.loc.gov/vocabulary/countries/wiu> <http://www.w3.org/2004/02/skos/core#notation> "wiu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/nvu> . 
+<http://id.loc.gov/vocabulary/countries/nvu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/nvu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nevada"@en . 
+<http://id.loc.gov/vocabulary/countries/nvu> <http://www.w3.org/2000/01/rdf-schema#label> "Nevada"@en . 
+<http://id.loc.gov/vocabulary/countries/nvu> <http://www.w3.org/2004/02/skos/core#notation> "nvu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/ilu> . 
+<http://id.loc.gov/vocabulary/countries/ilu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/ilu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Illinois"@en . 
+<http://id.loc.gov/vocabulary/countries/ilu> <http://www.w3.org/2000/01/rdf-schema#label> "Illinois"@en . 
+<http://id.loc.gov/vocabulary/countries/ilu> <http://www.w3.org/2004/02/skos/core#notation> "ilu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/oru> . 
+<http://id.loc.gov/vocabulary/countries/oru> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/oru> <http://www.w3.org/2004/02/skos/core#prefLabel> "Oregon"@en . 
+<http://id.loc.gov/vocabulary/countries/oru> <http://www.w3.org/2000/01/rdf-schema#label> "Oregon"@en . 
+<http://id.loc.gov/vocabulary/countries/oru> <http://www.w3.org/2004/02/skos/core#notation> "oru"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://id.loc.gov/vocabulary/countries/utu> . 
+<http://id.loc.gov/vocabulary/countries/utu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/utu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Utah"@en . 
+<http://id.loc.gov/vocabulary/countries/utu> <http://www.w3.org/2000/01/rdf-schema#label> "Utah"@en . 
+<http://id.loc.gov/vocabulary/countries/utu> <http://www.w3.org/2004/02/skos/core#notation> "utu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/sh85092455#concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85092455> . 
+<http://id.loc.gov/authorities/subjects/sh85092455> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/authorities/subjects/sh85092455> <http://www.w3.org/2004/02/skos/core#prefLabel> "North America"@en . 
+<http://id.loc.gov/authorities/subjects/sh85092455> <http://www.w3.org/2000/01/rdf-schema#label> "North America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#notation> "n"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://id.loc.gov/vocabulary/geographicAreas> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/geographicAreas> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#changeNote> _:bnode1893vocabularygeographicAreasn . 
+_:bnode1893vocabularygeographicAreasn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> . 
+_:bnode1893vocabularygeographicAreasn <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/vocabulary/geographicAreas/n> . 
+_:bnode1893vocabularygeographicAreasn <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/dlcmrc> . 
+_:bnode1893vocabularygeographicAreasn <http://purl.org/vocab/changeset/schema#createdDate> "1970-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> . 
+_:bnode1893vocabularygeographicAreasn <http://purl.org/vocab/changeset/schema#changeReason> "new"^^<http://www.w3.org/2001/XMLSchema#string> . 

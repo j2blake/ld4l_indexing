@@ -127,7 +127,7 @@ module Ld4lIndexing
         if row['topic']
           t = row['topic']
           topic = {}
-          topic[:label] = row['label'] || DocumentFactory.uri_localname(t)
+          topic[:label] = row['label'] || TopicReference.lookup(t) || DocumentFactory.uri_localname(t)
           topic[:uri] = t
           topic[:id] = DocumentFactory.uri_to_id(t) if t.start_with?(LOCAL_URI_PREFIX)
           topic[:type] = row['type'] if row['type']

@@ -1,0 +1,125 @@
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Great Britain"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#hasBroaderAuthority> <http://id.loc.gov/vocabulary/geographicAreas/e> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Europe"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e> <http://www.w3.org/2000/01/rdf-schema#label> "Europe"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e> <http://www.loc.gov/mads/rdf/v1#code> "e"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority> <http://id.loc.gov/authorities/sh85056605#concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#useFor> _:bnode20vocabularygeographicArease-uk . 
+_:bnode20vocabularygeographicArease-uk <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+_:bnode20vocabularygeographicArease-uk <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+_:bnode20vocabularygeographicArease-uk <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "British Isles"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/vocabulary/geographicAreas/collection_PastPresentGACSEntries> . 
+<http://id.loc.gov/vocabulary/geographicAreas/collection_PastPresentGACSEntries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#MADSCollection> . 
+<http://id.loc.gov/vocabulary/geographicAreas/collection_PastPresentGACSEntries> <http://www.w3.org/2000/01/rdf-schema#label> "Past and Present GACS Entries"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Wales"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> <http://www.w3.org/2000/01/rdf-schema#label> "Wales"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> <http://www.loc.gov/mads/rdf/v1#code> "e-uk-wl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "England"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> <http://www.w3.org/2000/01/rdf-schema#label> "England"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> <http://www.loc.gov/mads/rdf/v1#code> "e-uk-en"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Northern Ireland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> <http://www.w3.org/2000/01/rdf-schema#label> "Northern Ireland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> <http://www.loc.gov/mads/rdf/v1#code> "e-uk-ni"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Scotland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> <http://www.w3.org/2000/01/rdf-schema#label> "Scotland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> <http://www.loc.gov/mads/rdf/v1#code> "e-uk-st"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Great Britain Miscellaneous Island Dependencies"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> <http://www.w3.org/2000/01/rdf-schema#label> "Great Britain Miscellaneous Island Dependencies"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> <http://www.loc.gov/mads/rdf/v1#code> "e-uk-ui"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#hasEarlierEstablishedForm> <http://id.loc.gov/authorities/names/n82068147> . 
+<http://id.loc.gov/authorities/names/n82068147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/authorities/names/n82068147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/authorities/names/n82068147> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "England and Wales"@en . 
+<http://id.loc.gov/authorities/names/n82068147> <http://www.w3.org/2000/01/rdf-schema#label> "England and Wales"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority> <http://id.loc.gov/authorities/subjects/sh85056605> . 
+<http://id.loc.gov/authorities/subjects/sh85056605> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/authorities/subjects/sh85056605> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/authorities/subjects/sh85056605> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Great Britain"@en . 
+<http://id.loc.gov/authorities/subjects/sh85056605> <http://www.w3.org/2000/01/rdf-schema#label> "Great Britain"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2002/07/owl#sameAs> <info:lc/vocabulary/gacs/e-uk> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#code> "e-uk"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/vocabulary/geographicAreas> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:bnode106vocabularygeographicArease-uk . 
+_:bnode106vocabularygeographicArease-uk <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+_:bnode106vocabularygeographicArease-uk <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> . 
+_:bnode106vocabularygeographicArease-uk <http://www.loc.gov/mads/rdf/v1#variantLabel> "United Kingdom"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:bnode117vocabularygeographicArease-uk . 
+_:bnode117vocabularygeographicArease-uk <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> . 
+_:bnode117vocabularygeographicArease-uk <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "new"^^<http://www.w3.org/2001/XMLSchema#string> . 
+_:bnode117vocabularygeographicArease-uk <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "1970-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> . 
+_:bnode117vocabularygeographicArease-uk <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/dlcmrc> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#prefLabel> "Great Britain"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2008/05/skos-xl#altLabel> _:bnode132vocabularygeographicArease-uk . 
+_:bnode132vocabularygeographicArease-uk <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> . 
+_:bnode132vocabularygeographicArease-uk <http://www.w3.org/2008/05/skos-xl#literalForm> "United Kingdom"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#broader> <http://id.loc.gov/vocabulary/geographicAreas/e> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e> <http://www.w3.org/2004/02/skos/core#prefLabel> "Europe"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e> <http://www.w3.org/2000/01/rdf-schema#label> "Europe"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e> <http://www.w3.org/2004/02/skos/core#notation> "e"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wales"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> <http://www.w3.org/2000/01/rdf-schema#label> "Wales"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-wl> <http://www.w3.org/2004/02/skos/core#notation> "e-uk-wl"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> <http://www.w3.org/2004/02/skos/core#prefLabel> "England"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> <http://www.w3.org/2000/01/rdf-schema#label> "England"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> <http://www.w3.org/2004/02/skos/core#notation> "e-uk-en"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> <http://www.w3.org/2004/02/skos/core#prefLabel> "Northern Ireland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> <http://www.w3.org/2000/01/rdf-schema#label> "Northern Ireland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ni> <http://www.w3.org/2004/02/skos/core#notation> "e-uk-ni"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> <http://www.w3.org/2004/02/skos/core#prefLabel> "Scotland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> <http://www.w3.org/2000/01/rdf-schema#label> "Scotland"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-st> <http://www.w3.org/2004/02/skos/core#notation> "e-uk-st"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> <http://www.w3.org/2004/02/skos/core#prefLabel> "Great Britain Miscellaneous Island Dependencies"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> <http://www.w3.org/2000/01/rdf-schema#label> "Great Britain Miscellaneous Island Dependencies"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk-ui> <http://www.w3.org/2004/02/skos/core#notation> "e-uk-ui"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/sh85056605#concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/authorities/subjects/sh85056605> . 
+<http://id.loc.gov/authorities/subjects/sh85056605> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/authorities/subjects/sh85056605> <http://www.w3.org/2004/02/skos/core#prefLabel> "Great Britain"@en . 
+<http://id.loc.gov/authorities/subjects/sh85056605> <http://www.w3.org/2000/01/rdf-schema#label> "Great Britain"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#notation> "e-uk"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/geographicAreas> . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#altLabel> "United Kingdom"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/e-uk> <http://www.w3.org/2004/02/skos/core#changeNote> _:bnode204vocabularygeographicArease-uk . 
+_:bnode204vocabularygeographicArease-uk <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> . 
+_:bnode204vocabularygeographicArease-uk <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/vocabulary/geographicAreas/e-uk> . 
+_:bnode204vocabularygeographicArease-uk <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/dlcmrc> . 
+_:bnode204vocabularygeographicArease-uk <http://purl.org/vocab/changeset/schema#createdDate> "1970-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> . 
+_:bnode204vocabularygeographicArease-uk <http://purl.org/vocab/changeset/schema#changeReason> "new"^^<http://www.w3.org/2001/XMLSchema#string> . 

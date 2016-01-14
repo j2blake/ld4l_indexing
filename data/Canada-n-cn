@@ -1,0 +1,221 @@
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Canada"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasBroaderAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "North America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2000/01/rdf-schema#label> "North America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.loc.gov/mads/rdf/v1#code> "n"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority> <http://id.loc.gov/vocabulary/countries/xxc> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/countries/MARC_Country> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Canada"@en . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/2000/01/rdf-schema#label> "Canada"@en . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.loc.gov/mads/rdf/v1#code> "xxc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#useFor> _:bnode29vocabularygeographicAreasn-cn . 
+_:bnode29vocabularygeographicAreasn-cn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+_:bnode29vocabularygeographicAreasn-cn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+_:bnode29vocabularygeographicAreasn-cn <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Canada, Eastern"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#useFor> _:bnode39vocabularygeographicAreasn-cn . 
+_:bnode39vocabularygeographicAreasn-cn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+_:bnode39vocabularygeographicAreasn-cn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+_:bnode39vocabularygeographicAreasn-cn <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Canada, Northern"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#useFor> _:bnode49vocabularygeographicAreasn-cn . 
+_:bnode49vocabularygeographicAreasn-cn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+_:bnode49vocabularygeographicAreasn-cn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+_:bnode49vocabularygeographicAreasn-cn <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Northwest, Canadian"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#useFor> _:bnode59vocabularygeographicAreasn-cn . 
+_:bnode59vocabularygeographicAreasn-cn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+_:bnode59vocabularygeographicAreasn-cn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+_:bnode59vocabularygeographicAreasn-cn <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Saint Lawrence River"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/vocabulary/geographicAreas/collection_PastPresentGACSEntries> . 
+<http://id.loc.gov/vocabulary/geographicAreas/collection_PastPresentGACSEntries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#MADSCollection> . 
+<http://id.loc.gov/vocabulary/geographicAreas/collection_PastPresentGACSEntries> <http://www.w3.org/2000/01/rdf-schema#label> "Past and Present GACS Entries"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Alberta"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> <http://www.w3.org/2000/01/rdf-schema#label> "Alberta"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-ab"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Québec (Province)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> <http://www.w3.org/2000/01/rdf-schema#label> "Québec (Province)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-qu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Yukon Territory"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> <http://www.w3.org/2000/01/rdf-schema#label> "Yukon Territory"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-yk"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Saskatchewan"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> <http://www.w3.org/2000/01/rdf-schema#label> "Saskatchewan"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-sn"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Nunavut"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> <http://www.w3.org/2000/01/rdf-schema#label> "Nunavut"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-nu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "New Brunswick"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> <http://www.w3.org/2000/01/rdf-schema#label> "New Brunswick"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-nk"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Ontario"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> <http://www.w3.org/2000/01/rdf-schema#label> "Ontario"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-on"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "British Columbia"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> <http://www.w3.org/2000/01/rdf-schema#label> "British Columbia"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-bc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Northwest Territories"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> <http://www.w3.org/2000/01/rdf-schema#label> "Northwest Territories"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-nt"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Newfoundland and Labrador"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> <http://www.w3.org/2000/01/rdf-schema#label> "Newfoundland and Labrador"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-nf"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Prince Edward Island"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> <http://www.w3.org/2000/01/rdf-schema#label> "Prince Edward Island"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-pi"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Manitoba"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> <http://www.w3.org/2000/01/rdf-schema#label> "Manitoba"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-mb"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/geographicAreas/MARC_GeographicArea> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Nova Scotia"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> <http://www.w3.org/2000/01/rdf-schema#label> "Nova Scotia"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> <http://www.loc.gov/mads/rdf/v1#code> "n-cn-ns"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2002/07/owl#sameAs> <info:lc/vocabulary/gacs/n-cn> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#code> "n-cn"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/vocabulary/geographicAreas> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:bnode211vocabularygeographicAreasn-cn . 
+_:bnode211vocabularygeographicAreasn-cn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> . 
+_:bnode211vocabularygeographicAreasn-cn <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "new"^^<http://www.w3.org/2001/XMLSchema#string> . 
+_:bnode211vocabularygeographicAreasn-cn <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "1970-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> . 
+_:bnode211vocabularygeographicAreasn-cn <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/dlcmrc> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#prefLabel> "Canada"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#broader> <http://id.loc.gov/vocabulary/geographicAreas/n> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#prefLabel> "North America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2000/01/rdf-schema#label> "North America"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n> <http://www.w3.org/2004/02/skos/core#notation> "n"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> <http://www.w3.org/2004/02/skos/core#prefLabel> "Alberta"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> <http://www.w3.org/2000/01/rdf-schema#label> "Alberta"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ab> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-ab"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Québec (Province)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> <http://www.w3.org/2000/01/rdf-schema#label> "Québec (Province)"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-qu> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-qu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> <http://www.w3.org/2004/02/skos/core#prefLabel> "Yukon Territory"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> <http://www.w3.org/2000/01/rdf-schema#label> "Yukon Territory"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-yk> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-yk"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> <http://www.w3.org/2004/02/skos/core#prefLabel> "Saskatchewan"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> <http://www.w3.org/2000/01/rdf-schema#label> "Saskatchewan"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-sn> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-sn"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nunavut"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> <http://www.w3.org/2000/01/rdf-schema#label> "Nunavut"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nu> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-nu"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> <http://www.w3.org/2004/02/skos/core#prefLabel> "New Brunswick"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> <http://www.w3.org/2000/01/rdf-schema#label> "New Brunswick"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nk> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-nk"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ontario"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> <http://www.w3.org/2000/01/rdf-schema#label> "Ontario"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-on> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-on"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> <http://www.w3.org/2004/02/skos/core#prefLabel> "British Columbia"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> <http://www.w3.org/2000/01/rdf-schema#label> "British Columbia"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-bc> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-bc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> <http://www.w3.org/2004/02/skos/core#prefLabel> "Northwest Territories"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> <http://www.w3.org/2000/01/rdf-schema#label> "Northwest Territories"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nt> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-nt"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> <http://www.w3.org/2004/02/skos/core#prefLabel> "Newfoundland and Labrador"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> <http://www.w3.org/2000/01/rdf-schema#label> "Newfoundland and Labrador"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-nf> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-nf"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prince Edward Island"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> <http://www.w3.org/2000/01/rdf-schema#label> "Prince Edward Island"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-pi> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-pi"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> <http://www.w3.org/2004/02/skos/core#prefLabel> "Manitoba"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> <http://www.w3.org/2000/01/rdf-schema#label> "Manitoba"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-mb> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-mb"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nova Scotia"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> <http://www.w3.org/2000/01/rdf-schema#label> "Nova Scotia"@en . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn-ns> <http://www.w3.org/2004/02/skos/core#notation> "n-cn-ns"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://id.loc.gov/vocabulary/countries/xxc> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Canada"@en . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/2000/01/rdf-schema#label> "Canada"@en . 
+<http://id.loc.gov/vocabulary/countries/xxc> <http://www.w3.org/2004/02/skos/core#notation> "xxc"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#notation> "n-cn"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/geographicAreas> . 
+<http://id.loc.gov/vocabulary/geographicAreas/n-cn> <http://www.w3.org/2004/02/skos/core#changeNote> _:bnode364vocabularygeographicAreasn-cn . 
+_:bnode364vocabularygeographicAreasn-cn <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> . 
+_:bnode364vocabularygeographicAreasn-cn <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/vocabulary/geographicAreas/n-cn> . 
+_:bnode364vocabularygeographicAreasn-cn <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/dlcmrc> . 
+_:bnode364vocabularygeographicAreasn-cn <http://purl.org/vocab/changeset/schema#createdDate> "1970-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> . 
+_:bnode364vocabularygeographicAreasn-cn <http://purl.org/vocab/changeset/schema#changeReason> "new"^^<http://www.w3.org/2001/XMLSchema#string> . 
