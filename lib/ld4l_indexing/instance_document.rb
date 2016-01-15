@@ -13,6 +13,7 @@ module Ld4lIndexing
     PROP_DIMENSIONS = 'http://bib.ld4l.org/ontology/dimensions'
     PROP_ILLUSTRATION_NOTE = 'http://bib.ld4l.org/ontology/illustrationNote'
     PROP_SUPPLEMENTARY_CONTENT_NOTE = 'http://bib.ld4l.org/ontology/legacy/supplementaryContentNote'
+    PROP_HAS_ANNOTATION = 'http://bib.ld4l.org/ontology/hasAnnotation'
 
     TYPE_IDENTIFIER = 'http://bib.ld4l.org/ontology/Identifier'
 
@@ -57,6 +58,18 @@ module Ld4lIndexing
         ?sm rdf:value ?value
       } LIMIT 1000
     END
+
+    QUERY_STACKVIEW_SCORE = <<-END
+      PREFIX ld4l: <http://bib.ld4l.org/ontology/>
+      PREFIX oa: <http://www.w3.org/ns/oa#>
+      PREFIX content: <http://www.w3.org/2011/content#>
+      SELECT ?score
+      WHERE {
+        ?annotation oa:motivatedBy ld4l:stackViewScoring ;
+           oa:hasBody ?body .
+        ?body content:chars ?score .
+      } LIMIT 1000
+    END
     #
     def initialize(uri, ts, stats)
       @uri = uri
@@ -83,6 +96,7 @@ module Ld4lIndexing
       get_publisher_provisions
       get_holdings
       get_data_properties
+      get_stackview_scores
       @values = {
         'classes' => @classes,
         'titles' => @titles,
@@ -97,6 +111,7 @@ module Ld4lIndexing
         'dimensions' => @dimensions,
         'illustration_notes' => @illustration_notes,
         'supplementary_content_notes' => @supplementary_content_notes,
+        'stackview_scores' => @stackview_scores,
       }
     end
 
@@ -179,6 +194,18 @@ module Ld4lIndexing
       end
     end
 
+    def get_stackview_scores
+      @stackview_scores = []
+      @properties.each do |prop|
+        if prop['p'] == PROP_HAS_ANNOTATION
+          results = QueryRunner.new(QUERY_STACKVIEW_SCORE).bind_uri('annotation', prop['o']).execute(@ts)
+          results.each do |row|
+            @stackview_scores << row['score'].to_i if row['score']
+          end
+        end
+      end
+    end
+
     def assemble_document()
       doc = {}
       doc['id'] = DocumentFactory::uri_to_id(@uri)
@@ -201,6 +228,7 @@ module Ld4lIndexing
       doc['dimensions_t'] = @dimensions unless @dimensions.empty?
       doc['illustration_note_t'] = @illustration_notes unless @illustration_notes.empty?
       doc['supplementary_content_note_t'] = @supplementary_content_notes unless @supplementary_content_notes.empty?
+      doc['stackview_score_i'] = @stackview_scores unless @stackview_scores.empty?
       doc['text'] = @titles
       @document = doc
     end
