@@ -1,0 +1,29 @@
+#! /usr/bin/env ruby
+
+=begin rdoc
+--------------------------------------------------------------------------------
+
+Build new Solr index records for a specific set of URIs. If the URI doesn't 
+represent a Work, Instance, or Agent, it will be noted and ignored.
+
+Specify a directory that holds lists of uris, and a place to put the report.
+
+--------------------------------------------------------------------------------
+
+Usage: ld4l_index_chosen_uris <source_dir> <report_file> [REPLACE] 
+
+--------------------------------------------------------------------------------
+=end
+
+#require 'rubygems'
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'ld4l_indexing.rb'
+
+#
+# ---------------------------------------------------------
+# MAIN ROUTINE
+# ---------------------------------------------------------
+#
+
+Ld4lIndexing::IndexChosenUris.new.run
